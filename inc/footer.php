@@ -1,29 +1,32 @@
-<footer class="bg-slate-900 text-slate-300 py-20 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6">
+<footer class="bg-wine text-white py-24 border-t border-white/10 relative overflow-hidden">
+    <!-- Decorative Glow -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-red-purple to-transparent opacity-50"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             
             <!-- Column 1: Brand & About -->
             <div class="space-y-6">
                 <a href="#" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-900/20 group-hover:scale-110 transition-transform">
+                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white font-bold text-xl border border-white/10 group-hover:bg-white group-hover:text-wine transition-all duration-300">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <span class="text-2xl font-black text-white tracking-tight">DMCA<span class="text-indigo-500">Q</span>Cloud</span>
+                    <span class="text-2xl font-black text-white tracking-tight">DMCA<span class="text-thistle">Q</span>Cloud</span>
                 </a>
-                <p class="text-sm leading-relaxed text-slate-400">
+                <p class="text-sm leading-relaxed text-white/70">
                     Premium offshore hosting services with absolute privacy protection. Ignore DMCA and host your content with total freedom.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-indigo-600 hover:scale-110 transition-all">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-indigo-600 hover:scale-110 transition-all">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-indigo-600 hover:scale-110 transition-all">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-indigo-600 hover:scale-110 transition-all">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -35,7 +38,8 @@
                 <ul class="space-y-4 text-sm font-medium">
                     <?php foreach($NAV_LINKS as $link): ?>
                     <li>
-                        <a href="<?php echo $link['href']; ?>" class="hover:text-indigo-400 transition-colors flex items-center gap-2">
+                        <a href="<?php echo $link['href']; ?>" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group">
+                             <span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>
                              <?php echo $link['label']; ?>
                         </a>
                     </li>
@@ -43,15 +47,14 @@
                 </ul>
             </div>
 
-            <!-- Column 3: Useful Links (Static from Image) -->
+            <!-- Column 3: Useful Links -->
             <div>
                 <h4 class="text-white font-bold text-lg mb-8">Useful Links</h4>
                 <ul class="space-y-4 text-sm font-medium">
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Shared Hosting</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Dedicated Hosting</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Reseller Hosting</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">VPS Hosting</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Blogs</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Shared Hosting</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Dedicated Hosting</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Reseller Hosting</a></li>
+                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>VPS Hosting</a></li>
                 </ul>
             </div>
 
@@ -60,27 +63,34 @@
                 <h4 class="text-white font-bold text-lg mb-8">Mailing Address</h4>
                 <ul class="space-y-6 text-sm font-medium">
                     <li class="flex items-start gap-4">
-                        <i class="fas fa-map-marker-alt text-indigo-500 mt-1"></i>
-                        <span class="text-slate-400">121 King Street, Melbourne<br>Victoria 3000 Australia</span>
+                        <i class="fas fa-map-marker-alt text-thistle mt-1"></i>
+                        <span class="text-white/70">121 King Street, Melbourne<br>Victoria 3000 Australia</span>
                     </li>
                     <li class="flex items-center gap-4">
-                        <i class="fas fa-phone-alt text-indigo-500"></i>
-                        <span class="text-slate-400">+61 3 8376 6284</span>
+                        <i class="fas fa-phone-alt text-thistle"></i>
+                        <span class="text-white/70">+61 3 8376 6284</span>
                     </li>
                     <li class="flex items-center gap-4">
-                        <i class="fas fa-envelope text-indigo-500"></i>
-                        <a href="mailto:info@hostiko.com" class="text-slate-400 hover:text-white transition-colors">info@hostiko.com</a>
+                        <i class="fas fa-envelope text-thistle"></i>
+                        <a href="mailto:info@hostiko.com" class="text-white/70 hover:text-white transition-colors">info@hostiko.com</a>
                     </li>
                 </ul>
             </div>
 
         </div>
         
-        <div class="border-t border-slate-800 mt-20 pt-8 text-center text-sm text-slate-500 font-medium">
+        <div class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-white/40 font-medium">
             <p>&copy; <?php echo date('Y'); ?> DMCAQCloud. All Rights Reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms.php" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="fair-usage.php" class="hover:text-white transition-colors">Fair Usage Policy</a>
+                <a href="refund-policy.php" class="hover:text-white transition-colors">Refund Policy</a>
+            </div>
         </div>
     </div>
 </footer>
 
-<!-- Font Awesome (Ensure it's loaded if not already in head) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Close Body/HTML -->
+</body>
+</html>
