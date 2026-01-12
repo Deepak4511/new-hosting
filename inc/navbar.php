@@ -73,10 +73,10 @@ include_once __DIR__ . '/constants.php';
 
         /* Navbar Glassmorphism */
         .navbar-glass {
-            background: rgba(255, 255, 255, 0.9); 
+            background: rgba(253, 248, 243, 0.85); /* Matches Hero #FDF8F3 */ 
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(112, 41, 99, 0.1); 
+            border-bottom: 1px solid rgba(112, 41, 99, 0.05); 
         }
         .nav-link {
             position: relative;
@@ -188,6 +188,7 @@ include_once __DIR__ . '/constants.php';
         </a>
     </div>
 </div>
+ 
 
 <!-- Backdrop -->
 <div id="mobileBackdrop" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 z-[55] lg:hidden" onclick="toggleMobileMenu()"></div>

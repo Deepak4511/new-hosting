@@ -7,10 +7,10 @@ include './data/refund-data.php';
 <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
     <div class="floating-blob w-[600px] h-[600px] bg-red-purple/5 top-[-15%] right-[-10%] opacity-50"></div>
     <div class="floating-blob w-[700px] h-[700px] bg-wine/5 bottom-[5%] left-[-15%] [animation-delay:4s] opacity-50"></div>
-    <svg class="absolute top-0 left-0 w-full h-full opacity-[0.2]" xmlns="http://www.w3.org/2000/svg">
+ <svg class="absolute top-0 left-0 w-full h-full opacity-[0.2]" xmlns="http://www.w3.org/2000/svg">
          <defs>
-            <pattern id="grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#BF40BF" stroke-width="1"/>
+            <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#BF40BF" stroke-width="1"/>
             </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#grid-pattern)" />

@@ -22,34 +22,48 @@ $page = 'home';
 
 <main>
     <!-- Hero Section -->
-    <section id="home" class="relative pt-32 pb-20 px-6 min-h-[75vh] flex flex-col items-center justify-center text-center">
-        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-wine/10 bg-white/80 text-deep-purple text-sm font-bold mb-10 shadow-sm">
-            <span class="flex h-2 w-2 rounded-full bg-red-purple animate-pulse"></span>
-            Total Privacy Freedom
-        </div>
-        <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight text-deep-purple max-w-5xl">
-            <?php echo $HERO_DATA['title']; ?>
-        </h1>
-        <p class="text-slate-600 text-xl mb-10 leading-relaxed font-medium max-w-3xl">
-            <?php echo $HERO_DATA['subtitle']; ?>
-        </p>
-        
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <?php foreach ($HERO_DATA['features'] as $feat): ?>
-                <div class="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full border border-wine/10 shadow-sm text-wine text-sm font-bold backdrop-blur-sm">
-                    <i class="fas fa-check-circle text-red-purple"></i>
-                    <?php echo $feat; ?>
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-32 px-6 min-h-[85vh] flex items-center overflow-hidden bg-gradient-to-br from-wine/10 via-white to-red-purple/10" style="--c: 80px; mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000); -webkit-mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <!-- Left Side: Content -->
+            <div class="text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-wine/10 bg-white/80 text-deep-purple text-sm font-bold mb-8 shadow-sm backdrop-blur-md mx-auto lg:mx-0">
+                    <span class="flex h-2 w-2 rounded-full bg-red-purple animate-pulse"></span>
+                    Total Privacy Freedom
                 </div>
-            <?php endforeach; ?>
-        </div>
+                
+                <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight text-deep-purple">
+                    <?php echo $HERO_DATA['title']; ?>
+                </h1>
+                
+                <p class="text-slate-600 text-xl mb-8 leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
+                    <?php echo $HERO_DATA['subtitle']; ?>
+                </p>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-2 mb-10">
+                    <?php foreach ($HERO_DATA['features'] as $feat): ?>
+                        <div class="flex items-center gap-2  px-4 py-2 text-wine text-sm font-bold">
+                            <i class="fas fa-check-circle text-red-purple"></i>
+                            <?php echo $feat; ?>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
 
-        <div class="flex gap-4">
-            <button class="bg-wine hover:bg-red-purple text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20">
-                Get Started
-            </button>
-            <button class="bg-white border border-slate-200 hover:bg-slate-50 px-10 py-4 rounded-xl font-bold text-lg transition-all text-slate-700 shadow-sm">
-                View Plans
-            </button>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <button class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20 hover:-translate-y-1">
+                        Get Started
+                    </button>
+                    <button class="bg-white border border-slate-200 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all text-slate-700 shadow-sm hover:-translate-y-1">
+                        View Plans
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="relative hidden lg:block">
+                <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                <img src="/assets/img/hero_illustration.png" alt="Cloud Hosting Infrastructure" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+            </div>
         </div>
     </section>
 
@@ -58,15 +72,6 @@ $page = 'home';
         <div class="text-center mb-10">
             <h2 class="text-4xl md:text-5xl font-black mb-6 text-deep-purple">Affordable DMCA Ignored Hosting</h2>
             <p class="text-slate-500 text-lg font-medium">Warm fuzzies included.</p>
-        </div>
-
-        <!-- 3-Way Duration Toggle (1m, 6m, 1y) -->
-        <div class="flex justify-center mb-16">
-            <div class="bg-slate-100 p-1.5 rounded-2xl flex gap-1 shadow-inner">
-                <button onclick="setDuration('1m')" id="btn-1m" class="duration-btn px-6 py-2.5 rounded-xl text-sm font-bold transition-all bg-white text-wine shadow-sm">1 Month</button>
-                <button onclick="setDuration('6m')" id="btn-6m" class="duration-btn px-6 py-2.5 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-900">6 Months</button>
-                <button onclick="setDuration('1y')" id="btn-1y" class="duration-btn px-6 py-2.5 rounded-xl text-sm font-bold transition-all text-slate-500 hover:text-slate-900">1 Year</button>
-            </div>
         </div>
 
         <div class="relative flex flex-col xl:flex-row justify-center items-start gap-6 z-10">
@@ -84,7 +89,11 @@ $page = 'home';
                     $btnClass = $isRec ? 'bg-wine text-white hover:bg-wine/90 shadow-wine/20' : 'bg-white border-2 border-slate-200 text-wine hover:border-wine/30 hover:bg-wine/5';
                     
                     // Handle 'Contact Us' or numeric price
-                    $basePrice = is_numeric($plan['price']) ? $plan['price'] : 0;
+                    // Apply 1 Year Discount logic (10% off) directly
+                    $basePrice = is_numeric($plan['price']) ? ($plan['price'] * 0.9) : 0;
+                    // Format to 2 decimal places if it's a float, or just clean integer if .00 (but usually prices are like 79.99 -> 71.99)
+                    if(is_numeric($basePrice)) $basePrice = number_format($basePrice, 2);
+                    
                     $isContact = !is_numeric($plan['price']);
                 ?>
                 <div class="<?php echo $cardBase . ' ' . $bgClass; ?>">
@@ -93,16 +102,20 @@ $page = 'home';
                     <div class="flex items-baseline gap-1 my-4 min-h-[4rem] justify-center">
                         <?php if (!$isContact): ?>
                             <span class="text-sm font-bold text-slate-500">$</span>
-                            <!-- Price span with data attributes for JS -->
-                            <span class="price-val text-5xl font-black text-deep-purple tracking-tighter" data-base="<?php echo $basePrice; ?>"><?php echo $basePrice; ?></span>
+                            <span class="text-5xl font-black text-deep-purple tracking-tighter"><?php echo $basePrice; ?></span>
                             <span class="price-period text-xs font-bold text-slate-400">/mo</span>
                         <?php else: ?>
                             <span class="text-3xl font-black text-deep-purple tracking-tighter my-auto">Contact Us</span>
                         <?php endif; ?>
                     </div>
                     
-                    <?php if (isset($plan['subtitle'])): ?>
-                        <p class="text-wine/70 text-xs font-bold uppercase tracking-wide mb-6"><?php echo $plan['subtitle']; ?></p>
+                    <!-- Subtitle/Billing Cycle Badge -->
+                     <?php if (!$isContact): ?>
+                        <p class="text-wine/70 text-xs font-bold uppercase tracking-wide mb-6">Billed Annually</p>
+                    <?php else: ?>
+                        <?php if (isset($plan['subtitle'])): ?>
+                            <p class="text-wine/70 text-xs font-bold uppercase tracking-wide mb-6"><?php echo $plan['subtitle']; ?></p>
+                        <?php endif; ?>
                     <?php endif; ?>
                     
                     <p class="text-slate-500 text-sm mb-8 leading-relaxed px-2 min-h-[3rem]"><?php echo $plan['description']; ?></p>
@@ -130,40 +143,77 @@ $page = 'home';
         </div>
     </section>
 
-    <!-- Script for Duration Toggle -->
-    <script>
-        function setDuration(mode) {
-            // Update buttons
-            document.querySelectorAll('.duration-btn').forEach(btn => {
-                btn.classList.remove('bg-white', 'text-wine', 'shadow-sm');
-                btn.classList.add('text-slate-500');
-            });
-            document.getElementById('btn-' + mode).classList.add('bg-white', 'text-wine', 'shadow-sm');
-            document.getElementById('btn-' + mode).classList.remove('text-slate-500');
+    <!-- Email Solutions Section -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 mb-6 text-sm font-bold text-deep-purple bg-deep-purple/5 rounded-full">Smarter email</span>
+                <h2 class="text-4xl md:text-5xl font-black text-deep-purple leading-tight">Email your audience with <br> confidence</h2>
+            </div>
 
-            // Update Prices
-            document.querySelectorAll('.price-val').forEach(el => {
-                const base = parseFloat(el.getAttribute('data-base'));
-                if (!base) return;
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Card 1: Business -->
+                <div class="bg-white rounded-3xl p-8 pb-0 border border-slate-100 shadow-sm flex flex-col items-start overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-wider rounded-lg mb-6">Business</span>
+                    <h3 class="text-2xl font-bold text-deep-purple mb-4">Build trust with a professional business email</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed mb-8">Polish your brand, protect your inbox, and grow your business with tools that keep you in the driver’s seat.</p>
+                    
+                    <ul class="space-y-3 mb-8 w-full">
+                        <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">Build trust with a branded business email</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">Seamless email access across all apps and devices</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">Private, protected, and always online</span>
+                        </li>
+                    </ul>
 
-                let final = base;
-                let period = '/mo';
+                    <a href="#" class="text-wine font-bold text-sm hover:text-red-purple transition-colors mb-10 inline-flex items-center gap-2">
+                        Learn more <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
 
-                if (mode === '6m') {
-                    final = base * 0.95; // 5% Discount logic
-                } else if (mode === '1y') {
-                    final = base * 0.90; // 10% Discount logic
-                }
+                    <div class="mt-auto w-full relative">
+                         <img src="/assets/img/email_business_ui.png" class="w-full rounded-t-xl shadow-lg border border-slate-100 group-hover:scale-105 transition-transform duration-500 origin-bottom" alt="Business Email Interface">
+                    </div>
+                </div>
 
-                // Animate change
-                el.style.opacity = 0;
-                setTimeout(() => {
-                   el.innerText = final.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 2});
-                   el.style.opacity = 1;
-                }, 200);
-            });
-        }
-    </script>
+                <!-- Card 2: Marketing -->
+                 <div class="bg-white rounded-3xl p-8 pb-0 border border-slate-100 shadow-sm flex flex-col items-start overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase tracking-wider rounded-lg mb-6">Marketing</span>
+                    <h3 class="text-2xl font-bold text-deep-purple mb-4">Grow your business with AI-powered email marketing</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed mb-8">With Reach, you can schedule emails, automate sequences to save time, and maintain brand consistency.</p>
+                    
+                    <ul class="space-y-3 mb-8 w-full">
+                        <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">Design and write emails with AI</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">Your logo and colors, auto-applied</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <span class="text-wine mt-1"><i class="fas fa-check"></i></span>
+                            <span class="text-slate-600 text-sm font-semibold">No coding required</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="text-wine font-bold text-sm hover:text-red-purple transition-colors mb-10 inline-flex items-center gap-2">
+                        Learn more <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+
+                    <div class="mt-auto w-full relative">
+                         <img src="/assets/img/marketing_email_ui.png" class="w-full rounded-t-xl shadow-lg border border-slate-100 group-hover:scale-105 transition-transform duration-500 origin-bottom" alt="Email Marketing Interface">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Why Choose Features Section -->
     <section id="features" class="py-24 px-6 max-w-7xl mx-auto">

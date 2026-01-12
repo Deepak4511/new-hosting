@@ -3,34 +3,32 @@ include './inc/navbar.php';
 include './data/streaming-data.php'; 
 ?>
 
-<!-- Decorative Background -->
-<div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="floating-blob w-[600px] h-[600px] bg-red-purple/5 top-[-15%] right-[-10%] opacity-50"></div>
-    <div class="floating-blob w-[700px] h-[700px] bg-wine/5 bottom-[5%] left-[-15%] [animation-delay:4s] opacity-50"></div>
-    <svg class="absolute top-0 left-0 w-full h-full opacity-[0.2]" xmlns="http://www.w3.org/2000/svg">
-         <defs>
-            <pattern id="grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
-                <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#BF40BF" stroke-width="1"/>
-            </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid-pattern)" />
-    </svg>
-</div>
-
-<main>
-    <!-- Streaming Hero -->
-    <section class="pt-40 pb-20 px-6 text-center">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-black text-deep-purple mb-6 tracking-tight">
-                <span class="gradient-text">Robust</span> Offshore <br> Streaming Servers
-            </h1>
-            <p class="text-xl text-slate-600 font-medium max-w-3xl mx-auto leading-relaxed mb-10">
-                <?php echo $STREAMING_HERO['subtitle']; ?>
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                 <button onclick="document.getElementById('server-list').scrollIntoView({behavior: 'smooth'})" class="bg-wine hover:bg-red-purple text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/30">
-                    <?php echo $STREAMING_HERO['cta']; ?>
-                </button>
+<!-- Streaming Hero -->
+    <section class="relative pt-32 pb-32 px-6 min-h-[70vh] flex items-center overflow-hidden bg-gradient-to-br from-wine/10 via-white to-red-purple/10" style="--c: 80px; mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000); -webkit-mask: radial-gradient(60% var(--c) at bottom, #0000 calc(100% - 2px), #000);">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <!-- Left Content -->
+            <div class="text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-wine/10 bg-white/60 text-wine text-xs font-bold mb-6 shadow-sm backdrop-blur-md mx-auto lg:mx-0">
+                    <span class="flex h-2 w-2 rounded-full bg-red-purple animate-pulse"></span>
+                    High Bandwidth
+                </div>
+                <h1 class="text-5xl md:text-6xl font-black text-deep-purple mb-6 tracking-tight leading-tight">
+                    <span class="gradient-text">Robust</span> Offshore <br> Streaming Servers
+                </h1>
+                <p class="text-xl text-slate-600 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                    <?php echo $STREAMING_HERO['subtitle']; ?>
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                     <button onclick="document.getElementById('server-list').scrollIntoView({behavior: 'smooth'})" class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/30 hover:-translate-y-1">
+                        <?php echo $STREAMING_HERO['cta']; ?>
+                    </button>
+                </div>
+            </div>
+            
+             <!-- Right Image -->
+            <div class="relative hidden lg:block">
+                 <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                <img src="/assets/img/hero_illustration.png" alt="Streaming Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
             </div>
         </div>
     </section>
