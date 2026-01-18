@@ -4,16 +4,16 @@ $PAGE_TITLE = "DMCA Ignored Hosting – DMCAQCloud";
 
 /* HERO */
 $HERO_DATA = [
-  'title' => 'Your Content Protected — <span class="gradient-text">Always. Fastest.</span>',
-  'subtitle' => 'Offshore servers built for creators who demand privacy & power.',
-  'features' => [
-    '100% DMCA Ignored Servers',
-    'Blazing Fast NVMe SSD Hosting',
-    'Offshore Privacy Protection',
-    'Anonymous Hosting',
-    '24/7 Expert Support'
-  ],
-  'cta' => 'Get Started'
+    'title' => 'Your Content Protected — <span class="gradient-text">Always. Fastest.</span>',
+    'subtitle' => 'Offshore servers built for creators who demand privacy & power.',
+    'features' => [
+        '100% DMCA Ignored Servers',
+        'Blazing Fast NVMe SSD Hosting',
+        'Offshore Privacy Protection',
+        'Anonymous Hosting',
+        '24/7 Expert Support'
+    ],
+    'cta' => 'Get Started'
 ];
 
 // Why Choose Features
@@ -78,6 +78,7 @@ $PRICING_PLANS = [
             'Free Migration'
         ],
         'button_text' => 'Order Now',
+        'button_link' => '/dedicated.php',
         'highlight' => false,
         'has_badge' => false
     ],
@@ -95,6 +96,7 @@ $PRICING_PLANS = [
             '24/7 Support'
         ],
         'button_text' => 'Order Now',
+        'button_link' => '/video-server.php',
         'highlight' => true,
         'has_badge' => true
     ],
@@ -112,6 +114,7 @@ $PRICING_PLANS = [
             'Full Root Access'
         ],
         'button_text' => 'Order Now',
+        'button_link' => '/streaming-server.php',
         'highlight' => false,
         'has_badge' => false
     ],
@@ -129,6 +132,7 @@ $PRICING_PLANS = [
             'Priority Support'
         ],
         'button_text' => 'Request Quote',
+        'button_link' => '/contact.php',
         'highlight' => false,
         'has_badge' => false
     ]

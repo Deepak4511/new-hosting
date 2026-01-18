@@ -1,10 +1,10 @@
-<footer class="bg-wine text-white py-24 border-t border-white/10 relative overflow-hidden">
+<footer class="bg-deep-purple text-white py-24 border-t border-white/10 relative overflow-hidden">
     <!-- Decorative Glow -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-red-purple to-transparent opacity-50"></div>
-    
+
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            
+
             <!-- Column 1: Brand & About -->
             <div class="space-y-6">
                 <a href="#" class="flex items-center gap-2 group">
@@ -36,13 +36,13 @@
             <div>
                 <h4 class="text-white font-bold text-lg mb-8">Quick Links</h4>
                 <ul class="space-y-4 text-sm font-medium">
-                    <?php foreach($NAV_LINKS as $link): ?>
-                    <li>
-                        <a href="<?php echo $link['href']; ?>" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group">
-                             <span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>
-                             <?php echo $link['label']; ?>
-                        </a>
-                    </li>
+                    <?php foreach ($NAV_LINKS as $link): ?>
+                        <li>
+                            <a href="<?php echo $link['href']; ?>" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group">
+                                <span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>
+                                <?php echo $link['label']; ?>
+                            </a>
+                        </li>
                     <?php endforeach; ?>
                 </ul>
             </div>
@@ -78,11 +78,11 @@
             </div>
 
         </div>
-        
+
         <div class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-white/40 font-medium">
             <p>&copy; <?php echo date('Y'); ?> DMCAQCloud. All Rights Reserved.</p>
             <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <!-- <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> -->
                 <a href="terms.php" class="hover:text-white transition-colors">Terms of Service</a>
                 <a href="fair-usage.php" class="hover:text-white transition-colors">Fair Usage Policy</a>
                 <a href="refund-policy.php" class="hover:text-white transition-colors">Refund Policy</a>
@@ -93,4 +93,5 @@
 
 <!-- Close Body/HTML -->
 </body>
+
 </html>
