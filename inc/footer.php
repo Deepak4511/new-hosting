@@ -51,10 +51,10 @@
             <div>
                 <h4 class="text-white font-bold text-lg mb-8">Useful Links</h4>
                 <ul class="space-y-4 text-sm font-medium">
-                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Shared Hosting</a></li>
-                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Dedicated Hosting</a></li>
-                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>Reseller Hosting</a></li>
-                    <li><a href="#" class="text-white/70 hover:text-thistle transition-colors flex items-center gap-2 group"><span class="w-1.5 h-1.5 rounded-full bg-red-purple group-hover:bg-thistle transition-colors"></span>VPS Hosting</a></li>
+                    <li><a href="terms.php" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    <li> <a href="fair-usage.php" class="hover:text-white transition-colors">Fair Usage Policy</a></li>
+                    <li> <a href="refund-policy.php" class="hover:text-white transition-colors">Refund Policy</a></li>
+                    <li><a href="report-abuse.php" class="hover:text-white transition-colors">Report Abuse</a></li>
                 </ul>
             </div>
 
@@ -62,17 +62,14 @@
             <div>
                 <h4 class="text-white font-bold text-lg mb-8">Mailing Address</h4>
                 <ul class="space-y-6 text-sm font-medium">
-                    <li class="flex items-start gap-4">
-                        <i class="fas fa-map-marker-alt text-thistle mt-1"></i>
-                        <span class="text-white/70">121 King Street, Melbourne<br>Victoria 3000 Australia</span>
-                    </li>
-                    <li class="flex items-center gap-4">
+
+                    <!-- <li class="flex items-center gap-4">
                         <i class="fas fa-phone-alt text-thistle"></i>
                         <span class="text-white/70">+61 3 8376 6284</span>
-                    </li>
+                    </li> -->
                     <li class="flex items-center gap-4">
                         <i class="fas fa-envelope text-thistle"></i>
-                        <a href="mailto:info@hostiko.com" class="text-white/70 hover:text-white transition-colors">info@hostiko.com</a>
+                        <a href="mailto:support@dmcaqloud.com" class="text-white/70 hover:text-white transition-colors">support@dmcaqloud.com</a>
                     </li>
                 </ul>
             </div>
@@ -82,10 +79,11 @@
         <div class="border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-white/40 font-medium">
             <p>&copy; <?php echo date('Y'); ?> DMCAQCloud. All Rights Reserved.</p>
             <div class="flex gap-6 mt-4 md:mt-0">
-                <!-- <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> -->
-                <a href="terms.php" class="hover:text-white transition-colors">Terms of Service</a>
-                <a href="fair-usage.php" class="hover:text-white transition-colors">Fair Usage Policy</a>
-                <a href="refund-policy.php" class="hover:text-white transition-colors">Refund Policy</a>
+                <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+
+
+
+
             </div>
         </div>
     </div>

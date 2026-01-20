@@ -90,8 +90,8 @@ $page = 'home';
 
                     // Handle 'Contact Us' or numeric price
                     // Apply 1 Year Discount logic (10% off) directly
-                    $basePrice = is_numeric($plan['price']) ? ($plan['price'] * 0.9) : 0;
-                    // Format to 2 decimal places if it's a float, or just clean integer if .00 (but usually prices are like 79.99 -> 71.99)
+                    $basePrice = is_numeric($plan['price']) ? ($plan['price']) : 0;
+                    // Format to 2 decimal places if it's a float, or just clean integer if .00 (but usually prices are like 79.99 -> 99)
                     if (is_numeric($basePrice)) $basePrice = number_format($basePrice, 2);
 
                     $isContact = !is_numeric($plan['price']);

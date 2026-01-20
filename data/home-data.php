@@ -4,7 +4,7 @@ $PAGE_TITLE = "DMCA Ignored Hosting – DMCAQCloud";
 
 /* HERO */
 $HERO_DATA = [
-    'title' => 'Your Content Protected — <span class="gradient-text">Always. Fastest.</span>',
+    'title' => 'Your Content Protected <span class="gradient-text">Always. Fastest.</span>',
     'subtitle' => 'Offshore servers built for creators who demand privacy & power.',
     'features' => [
         '100% DMCA Ignored Servers',
@@ -66,7 +66,7 @@ $FEATURES = [
 $PRICING_PLANS = [
     [
         'name' => 'Adult Servers',
-        'price' => '79.99',
+        'price' => '139',
         'subtitle' => 'per Month',
         'description' => 'Optimized for high-traffic adult content.',
         'features' => [
@@ -78,7 +78,7 @@ $PRICING_PLANS = [
             'Free Migration'
         ],
         'button_text' => 'Order Now',
-        'button_link' => '/dedicated.php',
+        'button_link' => 'dedicated.php',
         'highlight' => false,
         'has_badge' => false
     ],
@@ -96,13 +96,13 @@ $PRICING_PLANS = [
             '24/7 Support'
         ],
         'button_text' => 'Order Now',
-        'button_link' => '/video-server.php',
+        'button_link' => 'video-server.php',
         'highlight' => true,
         'has_badge' => true
     ],
     [
         'name' => 'Streaming Server',
-        'price' => '249',
+        'price' => '149',
         'subtitle' => 'per Month',
         'description' => 'Dedicated power for live streaming.',
         'features' => [
@@ -114,7 +114,7 @@ $PRICING_PLANS = [
             'Full Root Access'
         ],
         'button_text' => 'Order Now',
-        'button_link' => '/streaming-server.php',
+        'button_link' => 'streaming-server.php',
         'highlight' => false,
         'has_badge' => false
     ],
@@ -132,7 +132,7 @@ $PRICING_PLANS = [
             'Priority Support'
         ],
         'button_text' => 'Request Quote',
-        'button_link' => '/contact.php',
+        'button_link' => 'contact.php',
         'highlight' => false,
         'has_badge' => false
     ]

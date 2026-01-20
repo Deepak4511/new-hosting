@@ -43,7 +43,16 @@ include './data/streaming-data.php';
             <p class="text-slate-500 text-lg mb-4">Enterprise Reliability, Instant Scale.</p>
         </div>
 
-        <?php include './inc/dedicatedPlan.php'; ?>
+        <?php
+        include './data/dedicated-server-plans.php';
+
+        // Filter for Streaming Plans using the 'type' field
+        $DEDICATED_SERVERS = array_filter($DEDICATED_SERVERS, function ($server) {
+            return isset($server['type']) && in_array('streaming', $server['type']);
+        });
+
+        include './inc/dedicatedPlan.php';
+        ?>
 </section>
 
 <!-- Eco Server Banner -->

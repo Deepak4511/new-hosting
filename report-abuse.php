@@ -1,6 +1,6 @@
 <?php
 include './inc/navbar.php';
-include './data/refund-data.php';
+include './data/report-abuse-data.php';
 
 function slugify($text)
 {
@@ -17,8 +17,8 @@ function slugify($text)
 
 <!-- Decorative Background -->
 <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-    <div class="floating-blob w-[600px] h-[600px] bg-red-purple/5 top-[-15%] right-[-10%] opacity-50"></div>
-    <div class="floating-blob w-[700px] h-[700px] bg-wine/5 bottom-[5%] left-[-15%] [animation-delay:4s] opacity-50"></div>
+    <div class="floating-blob w-[600px] h-[600px] bg-wine/5 top-[-15%] right-[-10%] opacity-50"></div>
+    <div class="floating-blob w-[700px] h-[700px] bg-red-purple/5 bottom-[5%] left-[-15%] [animation-delay:4s] opacity-50"></div>
     <svg class="absolute top-0 left-0 w-full h-full opacity-[0.2]" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -34,37 +34,16 @@ function slugify($text)
     <section class="pt-40 pb-20 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-black text-deep-purple mb-6 tracking-tight">
-                <?php echo $REFUND_HERO['title']; ?>
+                <?php echo $REPORT_ABUSE_HERO['title']; ?>
             </h1>
             <p class="text-xl text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed mb-6">
-                <?php echo $REFUND_HERO['subtitle']; ?>
+                <?php echo $REPORT_ABUSE_HERO['subtitle']; ?>
             </p>
             <div class="inline-block bg-white border border-slate-200 px-4 py-2 rounded-lg text-sm font-bold text-slate-500 shadow-sm">
-                <?php echo $REFUND_HERO['last_updated']; ?>
+                <?php echo $REPORT_ABUSE_HERO['last_updated']; ?>
             </div>
         </div>
     </section>
-
-    <!-- Top Alerts -->
-    <?php if (isset($REFUND_ALERTS)): ?>
-        <section class="px-6 mb-12 max-w-7xl mx-auto space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-                <?php foreach ($REFUND_ALERTS as $alert):
-                    $colors = $alert['type'] == 'danger'
-                        ? 'bg-red-50 border-red-100 text-red-700'
-                        : 'bg-blue-50 border-blue-100 text-blue-700';
-                    $icon = $alert['type'] == 'danger' ? 'fa-ban' : 'fa-info-circle';
-                ?>
-                    <div class="<?php echo $colors; ?> border p-6 rounded-2xl text-center shadow-sm">
-                        <h3 class="font-black text-lg mb-2 uppercase tracking-wide flex items-center justify-center gap-2">
-                            <i class="fas <?php echo $icon; ?>"></i> <?php echo $alert['title']; ?>
-                        </h3>
-                        <p class="font-medium text-sm md:text-base"><?php echo $alert['text']; ?></p>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </section>
-    <?php endif; ?>
 
     <!-- Content -->
     <section class="pb-24 px-6 max-w-7xl mx-auto">
@@ -78,7 +57,7 @@ function slugify($text)
                         <!-- Decorative Line -->
                         <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-slate-200 ml-0.5"></div>
 
-                        <?php foreach ($REFUND_CONTENT as $index => $section):
+                        <?php foreach ($REPORT_ABUSE_CONTENT as $index => $section):
                             $id = slugify($section['title']);
                         ?>
                             <a href="#<?php echo $id; ?>" class="sidebar-link block py-3 px-6 border-l-[3px] border-transparent text-slate-500 hover:text-wine hover:border-wine/50 transition-all text-sm font-bold relative z-10" data-target="<?php echo $id; ?>">
@@ -100,7 +79,7 @@ function slugify($text)
                             <i class="fas fa-chevron-down group-open:rotate-180 transition-transform text-wine"></i>
                         </summary>
                         <div class="mt-4 space-y-1 pt-4 border-t border-slate-100 max-h-[60vh] overflow-y-auto">
-                            <?php foreach ($REFUND_CONTENT as $index => $section):
+                            <?php foreach ($REPORT_ABUSE_CONTENT as $index => $section):
                                 $id = slugify($section['title']);
                             ?>
                                 <a href="#<?php echo $id; ?>" class="block py-2 px-2 rounded-lg hover:bg-wine/5 text-slate-600 hover:text-wine text-sm font-medium" onclick="this.closest('details').removeAttribute('open')">
@@ -112,7 +91,7 @@ function slugify($text)
                 </div>
 
                 <div class="space-y-12">
-                    <?php foreach ($REFUND_CONTENT as $section):
+                    <?php foreach ($REPORT_ABUSE_CONTENT as $section):
                         $id = slugify($section['title']);
                     ?>
                         <div id="<?php echo $id; ?>" class="scroll-mt-32 border-b border-slate-100 pb-12 last:border-0">
@@ -132,7 +111,7 @@ function slugify($text)
                                 <ul class="space-y-4 mb-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
                                     <?php foreach ($section['points'] as $point): ?>
                                         <li class="flex items-start gap-4 text-slate-700">
-                                            <span class="text-red-purple mt-1.5 flexOpacity-0"><i class="fas fa-times text-sm"></i></span>
+                                            <span class="text-red-purple mt-1.5 flexOpacity-0"><i class="fas fa-circle text-[6px]"></i></span>
                                             <span class="leading-relaxed font-medium"><?php echo $point; ?></span>
                                         </li>
                                     <?php endforeach; ?>
@@ -141,15 +120,15 @@ function slugify($text)
 
                             <!-- Subsections -->
                             <?php if (isset($section['subsections'])): ?>
-                                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                                <div class="space-y-8 mt-8">
                                     <?php foreach ($section['subsections'] as $sub): ?>
-                                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                                            <h3 class="text-lg font-bold text-wine mb-4 border-b border-wine/10 pb-2"><?php echo $sub['subtitle']; ?></h3>
+                                        <div>
+                                            <h3 class="text-xl font-bold text-wine mb-4"><?php echo $sub['subtitle']; ?></h3>
                                             <?php if (isset($sub['points'])): ?>
-                                                <ul class="space-y-3">
+                                                <ul class="space-y-3 pl-4 border-l-2 border-wine/10">
                                                     <?php foreach ($sub['points'] as $sp): ?>
-                                                        <li class="flex items-center gap-3 text-slate-600 text-sm font-bold">
-                                                            <span class="w-1.5 h-1.5 rounded-full bg-red-purple flex-shrink-0"></span>
+                                                        <li class="flex items-start gap-3 text-slate-600 text-sm font-bold">
+                                                            <span class="text-red-purple/60 mt-1"><i class="fas fa-check"></i></span>
                                                             <span class="leading-relaxed"><?php echo $sp; ?></span>
                                                         </li>
                                                     <?php endforeach; ?>
@@ -160,29 +139,17 @@ function slugify($text)
                                 </div>
                             <?php endif; ?>
 
-                            <!-- Chargeback Alert Box -->
-                            <?php if (isset($section['alert_box'])): ?>
-                                <div class="mt-8 bg-white border-2 border-red-purple px-6 py-8 rounded-2xl text-center shadow-lg transform hover:scale-[1.02] transition-transform">
-                                    <p class="font-black text-deep-purple text-xl uppercase tracking-wider mb-4">
-                                        <i class="fas fa-gavel mr-2 text-wine"></i>
-                                        <?php echo $section['alert_box']; ?>
+                            <!-- Highlight Box (for Contact) -->
+                            <?php if (isset($section['highlight_box'])): ?>
+                                <div class="mt-8 bg-gradient-to-r from-wine/10 to-red-purple/10 border border-wine/10 p-8 rounded-2xl text-center">
+                                    <p class="font-bold text-deep-purple text-lg">
+                                        <?php echo $section['highlight_box']; ?>
                                     </p>
-                                    <p class="text-slate-500 text-sm">We maintain a zero-tolerance policy against fraud.</p>
                                 </div>
                             <?php endif; ?>
 
                         </div>
                     <?php endforeach; ?>
-
-                    <!-- Footer Note -->
-                    <div class="mt-12 text-center">
-                        <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl inline-block max-w-2xl">
-                            <p class="font-bold text-deep-purple mb-2">QUESTIONS BEFORE BUYING?</p>
-                            <p class="text-slate-500 text-sm">
-                                If you are unsure if our service is right for you, please <a href="index.php#contact" class="text-wine font-bold hover:underline">Contact Sales</a> before purchasing.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
 

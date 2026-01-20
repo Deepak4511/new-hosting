@@ -1,6 +1,7 @@
 <?php
 include './inc/navbar.php';
 include './data/dedicated-data.php';
+include './data/dedicated-server-plans.php';
 ?>
 
 <!-- Dedicated Hero -->
