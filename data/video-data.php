@@ -164,18 +164,18 @@ $VIDEO_FAQ = [
 // Reusing general use cases structure if needed, or specific for video
 $VIDEO_USE_CASES = [
     [
-         'title' => 'Adult Tube Sites',
-         'desc' => 'Host millions of videos with complete privacy and no censorship.',
-         'icon' => 'fas fa-video'
+        'title' => 'Adult Tube Sites',
+        'desc' => 'Host millions of videos with complete privacy and no censorship.',
+        'icon' => 'fas fa-video'
     ],
     [
-         'title' => 'Movie & Cinema Sites',
-         'desc' => 'Store high-bitrate 4K movies with massive HDD storage arrays.',
-         'icon' => 'fas fa-film'
+        'title' => 'Movie & Cinema Sites',
+        'desc' => 'Store high-bitrate 4K movies with massive HDD storage arrays.',
+        'icon' => 'fas fa-film'
     ],
     [
-         'title' => 'Video Sharing Platforms',
-         'desc' => 'Build your own YouTube alternative with ffmpeg support and high bandwidth.',
-         'icon' => 'fas fa-share-alt'
+        'title' => 'Video Sharing Platforms',
+        'desc' => 'Build your own YouTube alternative with ffmpeg support and high bandwidth.',
+        'icon' => 'fas fa-share-alt'
     ],
 ];

@@ -6,6 +6,7 @@ $NAV_LINKS = [
     ['label' => 'Streaming', 'href' => 'streaming-server.php'],
     ['label' => 'Video Servers', 'href' => 'video-server.php'],
     ['label' => 'About Us', 'href' => 'about-us.php'],
+    ['label' => 'Contact', 'href' => 'contact.php'],
 ];
 
 // Hero Content

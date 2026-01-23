@@ -3,22 +3,20 @@
 $DEDICATED_SERVERS = [
     [
         'cpu_name' => 'AMD Ryzen 5 3600 (6c/12t @ 3.6 GHz)',
-        'cpu_detail' => '',
         'ram' => '32 GB DDR4',
         'storage' => '480 GB NVMe',
         'bandwidth' => '50TB',
         'uplink' => '1Gbps',
         'location' => 'NL - Amsterdam',
-        'price' => '99',
-        'price_1_month' => '99',
-        'price_3_month' => '97',
-        'price_6_month' => '95',
+        'price' => '109',
+        'price_1_month' => '109',
+        'price_3_month' => '107',
+        'price_6_month' => '105',
         'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-ryzen-5-3600-6c-12t-36-ghz',
         'type' => ['dedicated']
     ],
     [
         'cpu_name' => 'Intel Xeon E3-1230',
-        'cpu_detail' => '',
         'ram' => '16GB DDR3-1333',
         'storage' => '2 x 1 TB SATA or SSD',
         'bandwidth' => 'Up to 100 TB',
@@ -33,7 +31,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Intel Xeon E5-2683 v4 (16c/32t @ 2.1 - 3.0 GHz)',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB SSD',
         'bandwidth' => '50TB',
@@ -48,7 +45,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'AMD Ryzen 7 3700X (8c/16t @ 3.6 GHz)',
-        'cpu_detail' => '',
         'ram' => '64 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => '50TB',
@@ -61,9 +57,23 @@ $DEDICATED_SERVERS = [
         'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-ryzen-7-3700x-8c16t-at-36-ghz',
         'type' => ['dedicated', 'video']
     ],
+
+    [
+        'cpu_name' => ' AMD Ryzen 9 3900X (12c/24t @ 3.8 GHz)',
+        'ram' => '128 GB DDR4',
+        'storage' => '1.92 TB NVMe',
+        'bandwidth' => '50TB',
+        'uplink' => '1Gbps',
+        'location' => 'NL - Amsterdam',
+        'price' => '179',
+        'price_1_month' => '179',
+        'price_3_month' => '177',
+        'price_6_month' => '175',
+        'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-ryzen-9-3900x',
+        'type' => ['dedicated', 'video']
+    ],
     [
         'cpu_name' => 'Intel Xeon E3-1230v6',
-        'cpu_detail' => '',
         'ram' => '32 or 64 GB DDR4',
         'storage' => '2 x 480 GB SSD',
         'bandwidth' => 'Up to 100 TB',
@@ -84,31 +94,29 @@ $DEDICATED_SERVERS = [
         'bandwidth' => '50TB',
         'uplink' => '1Gbps',
         'location' => 'NL - Amsterdam',
-        'price' => '229',
-        'price_1_month' => '229',
-        'price_3_month' => '227',
-        'price_6_month' => '225',
+        'price' => '249',
+        'price_1_month' => '249',
+        'price_3_month' => '247',
+        'price_6_month' => '245',
         'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-ryzen-9-7900-12c24t-at-37-54-ghz',
         'type' => ['dedicated', 'video']
     ],
     [
         'cpu_name' => 'AMD EPYC 7402P (24c/48t @ 2.8 - 3.35 GHz)',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => '100TB',
         'uplink' => '1Gbps',
         'location' => 'NL - Amsterdam',
-        'price' => '249',
-        'price_1_month' => '249',
-        'price_3_month' => '247',
-        'price_6_month' => '245',
+        'price' => '289',
+        'price_1_month' => '289',
+        'price_3_month' => '287',
+        'price_6_month' => '285',
         'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-epyc-7402p-24c48t-at-28-335-ghz',
         'type' => ['dedicated', 'streaming']
     ],
     [
         'cpu_name' => 'Intel Xeon E-2334G',
-        'cpu_detail' => '',
         'ram' => 'Up to 128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => 'Unlimited',
@@ -123,7 +131,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Intel Xeon E3-1280v6',
-        'cpu_detail' => '',
         'ram' => '32 or 64 GB DDR4',
         'storage' => '2 x 500 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -138,7 +145,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Intel Xeon E-2356G',
-        'cpu_detail' => '',
         'ram' => 'Up to 128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => 'Unlimited',
@@ -153,7 +159,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Intel Xeon E-2388G',
-        'cpu_detail' => '',
         'ram' => 'Up to 128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => 'Unlimited',
@@ -168,7 +173,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2680v4',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '2 x 512 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -181,21 +185,7 @@ $DEDICATED_SERVERS = [
         'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/dual-intel-xeon-e5-2680v4',
         'type' => ['dedicated', 'video']
     ],
-    [
-        'cpu_name' => 'AMD EPYC 7443P (24c/48t @ 2.85 - 4.0 GHz)',
-        'cpu_detail' => '',
-        'ram' => '256 GB DDR4',
-        'storage' => '1.92 TB NVMe',
-        'bandwidth' => '100TB',
-        'uplink' => '1Gbps',
-        'location' => 'NL - Amsterdam',
-        'price' => '449',
-        'price_1_month' => '449',
-        'price_3_month' => '447',
-        'price_6_month' => '445',
-        'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-epyc-7443p-24c48t-at-285-40-ghz',
-        'type' => ['dedicated', 'video']
-    ],
+
 
     [
         'cpu_name' => 'Dual Intel Xeon E5-2680v4',
@@ -213,8 +203,21 @@ $DEDICATED_SERVERS = [
         'type' => ['dedicated', 'streaming']
     ],
     [
+        'cpu_name' => 'AMD EPYC 7443P (24c/48t @ 2.85 - 4.0 GHz)',
+        'ram' => '256 GB DDR4',
+        'storage' => '1.92 TB NVMe',
+        'bandwidth' => '100TB',
+        'uplink' => '1Gbps',
+        'location' => 'NL - Amsterdam',
+        'price' => '529',
+        'price_1_month' => '529',
+        'price_3_month' => '527',
+        'price_6_month' => '525',
+        'url' => 'https://pos.dmcaqloud.com/index.php?rp=/store/servers/amd-epyc-7443p-24c48t-at-285-40-ghz',
+        'type' => ['dedicated', 'video']
+    ],
+    [
         'cpu_name' => 'Dual Intel Gold 6138',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => 'Unlimited',
@@ -229,7 +232,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2620v4',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '6 x 10 TB SATA',
         'bandwidth' => 'Unlimited',
@@ -244,7 +246,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2620v2',
-        'cpu_detail' => '',
         'ram' => '112 GB DDR3',
         'storage' => '2 x 500 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -259,7 +260,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2620v4',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -274,7 +274,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'AMD EPYC 9654P',
-        'cpu_detail' => '',
         'ram' => '512 GB DDR5',
         'storage' => '2 x 960 GB NVME',
         'bandwidth' => '330TB',
@@ -289,7 +288,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2620v2',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR3',
         'storage' => '2 x 256 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -304,7 +302,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Xeon E5-2620v4',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB SSD',
         'bandwidth' => 'Unlimited',
@@ -319,7 +316,6 @@ $DEDICATED_SERVERS = [
     ],
     [
         'cpu_name' => 'Dual Intel Gold 6138',
-        'cpu_detail' => '',
         'ram' => '128 GB DDR4',
         'storage' => '960 GB NVMe',
         'bandwidth' => 'Unlimited',

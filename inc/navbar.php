@@ -144,7 +144,7 @@ include_once __DIR__ . '/constants.php';
 
             <!-- Logo -->
             <a href="index.php" class="flex items-center gap-2 group z-50 relative">
-                <img src="assets/img/logo.jpg" alt="Logo" class="w-45 h-10 object-contain">
+                <img src="assets/img/logo.webp" alt="Logo" class="w-45 h-10 object-contain">
             </a>
 
             <!-- Desktop Navigation -->

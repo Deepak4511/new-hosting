@@ -2,161 +2,79 @@
 
 $STREAMING_HERO = [
     'title' => 'Robust Offshore Streaming Servers',
-    'subtitle' => 'Power your TV, Live Events, and VOD platforms with unmetered 10Gbps ports, enterprise hardware, and absolute DMCA immunity.',
+    'subtitle' => 'Launch your IPTV service or movie streaming site on enterprise-grade dedicated servers in Amsterdam’s secure, privacy-centric data centers.',
     'cta' => 'Deploy Your Streaming Server Now'
 ];
 
-$STREAMING_SERVERS = [
-    [
-        'cpu' => 'Intel Xeon E3-1270 v3',
-        'ram' => '32 GB RAM',
-        'storage' => '2 x 500 GB SSD',
-        'bandwidth' => '1 Gbps Unmetered',
-        'price' => '149.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Intel Xeon E5-1650 v4',
-        'ram' => '64 GB RAM',
-        'storage' => '2 x 960 GB NVMe',
-        'bandwidth' => '2 Gbps Unmetered',
-        'price' => '249.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual Intel Xeon E5-2680 v4',
-        'ram' => '128 GB RAM',
-        'storage' => '2 x 1.92 TB NVMe',
-        'bandwidth' => '5 Gbps Unmetered',
-        'price' => '329.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual Intel Xeon Gold 6148',
-        'ram' => '256 GB RAM',
-        'storage' => '2 x 3.84 TB NVMe',
-        'bandwidth' => '10 Gbps Unmetered',
-        'price' => '369.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'AMD EPYC 7443P',
-        'ram' => '256 GB RAM',
-        'storage' => '4 x 1.92 TB NVMe',
-        'bandwidth' => '10 Gbps Unmetered',
-        'price' => '499.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 7543',
-        'ram' => '512 GB RAM',
-        'storage' => '4 x 3.84 TB NVMe',
-        'bandwidth' => '20 Gbps Dedicated',
-        'price' => '1299.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 7763',
-        'ram' => '512 GB RAM',
-        'storage' => '8 x 3.84 TB NVMe',
-        'bandwidth' => '20 Gbps Dedicated',
-        'price' => '1499.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 9554',
-        'ram' => '1 TB RAM',
-        'storage' => '10 x 7.68 TB NVMe',
-        'bandwidth' => '40 Gbps Dedicated',
-        'price' => '2049.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 9654',
-        'ram' => '1.5 TB RAM',
-        'storage' => '12 x 7.68 TB NVMe',
-        'bandwidth' => '50 Gbps Dedicated',
-        'price' => '2399.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 9754',
-        'ram' => '2 TB RAM',
-        'storage' => '24 x 7.68 TB NVMe',
-        'bandwidth' => '100 Gbps Dedicated',
-        'price' => '2599.00',
-        'setup' => 'Free Setup'
-    ],
-];
 
 $STREAMING_FAQ = [
     [
-        'question' => 'What is an Offshore Streaming Server?',
-        'answer' => 'An offshore streaming server is a dedicated server hosted in a jurisdiction (like the Netherlands) that supports privacy and free speech, optimized with high bandwidth ports (1Gbps to 100Gbps) to deliver buffer-free video content globally.'
+        'question' => '1. What is an Offshore Streaming Server?',
+        'answer' => 'A high-performance dedicated server located in the Netherlands, optimized for live and on-demand video streaming. It uses advanced protocols (HLS/DASH) to deliver buffer-free 4K/8K content globally, with full DMCA immunity.'
     ],
     [
-        'question' => 'Why host with DmcaQloud in the Netherlands?',
-        'answer' => 'The Netherlands offers some of the world\'s best internet connectivity and strict privacy laws. We own our hardware and network, ensuring no third-party interference with your streaming content.'
+        'question' => 'Why Host with dmcaqloud.com in the Netherlands?',
+        'answer' => 'The Netherlands offers 100% DMCA-ignored jurisdiction, ultra-fast EU connectivity, and strong privacy laws. dmcaqloud.com ensures your IPTV, VOD, or adult platform stays online 24/7 — no takedowns, no interference.'
     ],
     [
         'question' => 'Where Exactly Are Your Servers Located?',
-        'answer' => 'Our servers are located in TIER III+ data centers in Amsterdam, directly connected to majot internet exchanges like AMS-IX for minimal latency across Europe and beyond.'
+        'answer' => 'All dmcaqloud.com streaming servers are hosted in Tier-3 data centers in Amsterdam, Netherlands — the global hub for low-latency, high-bandwidth media delivery.'
     ],
     [
         'question' => 'Is Streaming Fast from Netherlands servers?',
-        'answer' => 'Yes! We use premium bandwidth carriers. Our location in Amsterdam is central to the global internet backbone, providing excellent speeds to Europe, North America, and Asia.'
+        'answer' => 'Yes, optimized servers provide smooth playback worldwide with minimal latency.'
     ],
     [
         'question' => 'How Fast is Server Activation?',
-        'answer' => 'Most standard configurations are deployed within 1-4 hours. Custom enterprise builds may take up to 24 hours to fully provision and stress-test.'
+        'answer' => 'Your server is live within 5 to 7 days of payment. Instant OS install (Ubuntu, CentOS, Debian, Windows), full root access, and white-label Dutch IPs ready immediately.'
     ],
     [
         'question' => 'Do You Support Anonymous Sign Up & Payments?',
-        'answer' => 'Absolutely. We require minimal personal information and accept Bitcoin, Monero, USDT, and other cryptocurrencies for 100% anonymous payments.'
+        'answer' => 'Yes. dmcaqloud.com accepts Bitcoin, Ethereum, USDT, PayPal, and cards. No ID required. Zero logs. Full anonymity from signup to streaming.'
     ],
     [
         'question' => 'Is Hosting Adult or IPTV Content Allowed?',
-        'answer' => 'Yes. We freely allow Adult content (legal in NL) and IPTV services. We do not monitor your content and ignore DMCA complaints.'
+        'answer' => '100% yes as long as it’s legal in the Netherlands. dmcaqloud.com supports adult tubes, IPTV panels, movie sites, sports streaming, and more no content restrictions.'
     ],
     [
         'question' => 'Can I Upgrade My Server Anytime?',
-        'answer' => 'Yes, you can upgrade RAM, Storage, or Bandwidth at any time by opening a support ticket. Downtime is minimal or non-existent for most upgrades.'
+        'answer' => 'Yes zero-downtime upgrades. Start small, scale to 40 Gbps or multi-server clusters. No contracts. Full control at dmcaqloud.com.'
     ],
     [
         'question' => 'Can I manage my server easily?',
-        'answer' => 'You get full root access (SSH) and a dedicated IPMI/KVM console, allowing you to install any OS, control power states, and troubleshoot remotely even if the OS is down.'
+        'answer' => 'Toggle Content'
     ],
 ];
 
 $STREAMING_USE_CASES = [
     [
         'title' => 'IPTV & Live TV Panels',
-        'desc' => 'Stable fast-flux networks for Xtream Codes, stalker middleware, and live channel redistribution.',
+        'desc' => 'Run 10,000+ channels in 4K. EPG, catch-up, restream – zero buffering.',
         'icon' => 'fas fa-tv'
     ],
     [
         'title' => 'Movie VOD Platforms',
-        'desc' => 'Host terabytes of movies and series with fast NVMe retrieval and high-throughput delivery.',
+        'desc' => 'Unlimited library with instant 8K playback. Auto-transcode, subtitles – 100% DMCA-proof.',
         'icon' => 'fas fa-film'
     ],
     [
         'title' => 'Adult Tube Sites',
-        'desc' => 'Privacy-first hosting for adult content with no censorship and complete DMCA immunity.',
+        'desc' => 'PPV + subscriptions, age-gate, token system. No takedowns – ever.',
         'icon' => 'fas fa-video' // Using video icon instead of "18" circle to ensure fa compatibility
     ],
     [
         'title' => 'Live Sports & PPV Events',
-        'desc' => 'Handle massive concurrent viewer spikes during live matches with 10Gbps+ dedicated uplinks.',
+        'desc' => '50K+ viewers on one server. Low-latency HLS, multi-angle, betting sync.',
         'icon' => 'far fa-futbol'
     ],
     [
         'title' => 'Private Cloud Archives',
-        'desc' => 'Secure, redundant storage for large media libraries, accessible only by you or your clients.',
+        'desc' => 'Encrypted 100TB vaults. Direct links, AES-256, geo-redundant.',
         'icon' => 'fas fa-cloud-upload-alt'
     ],
     [
         'title' => 'Music & Podcast Hubs',
-        'desc' => 'High-fidelity audio streaming servers for radio stations, podcasts, and music apps.',
+        'desc' => 'FLAC + radio mode. Ad-free, embeddable, real-time stats.',
         'icon' => 'fas fa-headphones-alt'
     ],
 ];

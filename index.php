@@ -50,12 +50,12 @@ $page = 'home';
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <button class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20 hover:-translate-y-1">
+                    <a href="#pricing" class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20 hover:-translate-y-1">
                         Get Started
-                    </button>
-                    <button class="bg-white border border-slate-200 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all text-slate-700 shadow-sm hover:-translate-y-1">
+                    </a>
+                    <a href="" class="bg-white border border-slate-200 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all text-slate-700 shadow-sm hover:-translate-y-1">
                         View Plans
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -70,8 +70,8 @@ $page = 'home';
     <!-- Pricing Section -->
     <section id="pricing" class="py-24 px-6 relative w-full max-w-[1600px] mx-auto">
         <div class="text-center mb-10">
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-deep-purple">Affordable DMCA Ignored Hosting</h2>
-            <p class="text-slate-500 text-lg font-medium">Warm fuzzies included.</p>
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-deep-purple">Affordable DMCA Ignored Hosting Plans Built for Freedom</h2>
+            <p class="text-slate-500 text-lg font-medium">Experience top-tier offshore hosting with complete privacy, speed, and data protection starting at just $79.99/month.</p>
         </div>
 
         <div class="relative flex flex-col xl:flex-row justify-center items-start gap-6 z-10">
@@ -150,13 +150,130 @@ $page = 'home';
     </section>
 
     <!-- Eco Server Banner -->
-    <?php include './inc/eco-server-banner.php'; ?>
+
+    <!-- Reality Check Section -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 pointer-events-none -z-10 bg-slate-50/50">
+            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-wine/5 rounded-full blur-3xl opacity-60"></div>
+            <div class="absolute left-[-100px] bottom-0 w-[400px] h-[400px] bg-red-purple/5 rounded-full blur-3xl opacity-60"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <!-- Left Side: Content -->
+            <div>
+                <span class="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest text-wine uppercase bg-wine/5 border border-wine/10 rounded-full">
+                    WHY HOTSITE MAKERS
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-8 leading-tight">
+                    Not Another Hosting Company.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">We Build Servers for Reality.</span>
+                </h2>
+
+                <p class="text-slate-600 text-lg mb-10 leading-relaxed max-w-lg">
+                    Most hosting companies are built for blogs and landing pages.
+                    We build infrastructure for projects that generate <strong class="text-deep-purple bg-deep-purple/5 px-1 rounded">real traffic,
+                        real files, real risk and real money</strong>.
+                </p>
+
+                <div class="flex flex-col gap-4 mb-12">
+                    <!-- Negative Items -->
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t oversell resources</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t panic on DMCA emails</span>
+                    </div>
+
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t throttle viral traffic</span>
+                    </div>
+
+                    <!-- Positive Item -->
+                    <div class="flex items-center gap-4 mt-2 group">
+                        <div class="w-8 h-8 rounded-lg bg-green-50 text-green-600 flex items-center justify-center text-sm border border-green-100 shadow-sm shadow-green-100/50 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="text-deep-purple font-bold text-lg">We build for <span class="decoration-wine/30 underline decoration-2 underline-offset-2">adult, video, streaming & high-risk niches</span></span>
+                    </div>
+                </div>
+
+                <a href="#plans" class="inline-flex items-center gap-3 bg-deep-purple hover:bg-wine text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-deep-purple/20 hover:-translate-y-1 group">
+                    See Available Server Options
+                    <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Right Side: Visual -->
+            <div class="relative pl-4 lg:pl-0">
+                <!-- Decorative Backdrop -->
+                <div class="absolute -inset-0.5 bg-gradient-to-br from-wine to-red-purple rounded-[2.5rem] blur opacity-20 animate-pulse"></div>
+
+                <!-- Card Container -->
+                <div class="relative bg-[#1a0f1d] rounded-[2rem] p-10 overflow-hidden border border-white/5 shadow-2xl group">
+                    <!-- Tech Overlay Grid -->
+                    <div class="absolute inset-0 opacity-[0.05]" style="background-image: linear-gradient(#bf40bf 1px, transparent 1px), linear-gradient(90deg, #bf40bf 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+                    <!-- Content -->
+                    <div class="relative z-10 text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-wine to-red-purple text-white text-2xl mb-8 shadow-lg shadow-wine/30 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+
+                        <h3 class="text-3xl font-black text-white mb-10 tracking-tight">Built to Take a Hit</h3>
+
+                        <!-- Animated Bars Visualization -->
+                        <div class="flex items-end justify-center gap-2 h-40 mb-10 px-4">
+                            <!-- Bar 1 -->
+                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
+                                <div class="absolute bottom-0 w-full bg-red-purple animate-[bounce_2s_infinite]" style="height: 40%"></div>
+                            </div>
+                            <!-- Bar 2 -->
+                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
+                                <div class="absolute bottom-0 w-full bg-white animate-[bounce_2.5s_infinite]" style="height: 75%"></div>
+                            </div>
+                            <!-- Bar 3 -->
+                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
+                                <div class="absolute bottom-0 w-full bg-red-purple animate-[bounce_2.2s_infinite]" style="height: 60%"></div>
+                            </div>
+                            <!-- Bar 4 (Tallest) -->
+                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full shadow-[0_0_20px_rgba(191,64,191,0.5)]">
+                                <div class="absolute bottom-0 w-full bg-gradient-to-t from-wine to-red-purple animate-[bounce_3s_infinite]" style="height: 90%"></div>
+                            </div>
+                            <!-- Bar 5 -->
+                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
+                                <div class="absolute bottom-0 w-full bg-white animate-[bounce_2.7s_infinite]" style="height: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="inline-block bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 mx-auto">
+                            <p class="text-slate-300 font-medium text-sm leading-relaxed">
+                                <span class="text-red-purple font-bold">Traffic spikes. DMCA pressure. Heavy files.</span><br>
+                                This is where weak hosting fails — and where our servers shine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Why Choose Features Section -->
     <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <h2 class="text-3xl md:text-5xl font-black mb-6 text-deep-purple">Why Choose DMCAQCloud?</h2>
-            <p class="text-slate-500 text-base max-w-2xl mx-auto">Bulletproof privacy meets enterprise performance.</p>
+            <h2 class="text-3xl md:text-5xl font-black mb-6 text-deep-purple">Why Choose DMCAQLoud for DMCA Ignored Servers?</h2>
+            <p class="text-slate-500 text-base max-w-2xl mx-auto">Better than others: No takedowns, faster loading, stronger protection perfect for adult, streaming, file lockers & torrent.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -416,7 +533,7 @@ $page = 'home';
                     </div>
                     <h3 class="text-xl font-bold mb-2">Telegram</h3>
                     <p class="text-slate-500 mb-6 text-sm">Fast direct messaging.</p>
-                    <a href="#" class="text-white font-bold bg-wine hover:bg-red-purple px-6 py-2 rounded-lg transition-colors inline-block">Message Us</a>
+                    <a href="http://t.me/Dmcaqloud" class="text-white font-bold bg-wine hover:bg-red-purple px-6 py-2 rounded-lg transition-colors inline-block">Message Us</a>
                 </div>
             </div>
         </div>

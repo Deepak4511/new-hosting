@@ -14,7 +14,7 @@
                     <span class="text-2xl font-black text-white tracking-tight">DMCA<span class="text-thistle">Q</span>Cloud</span>
                 </a>
                 <p class="text-sm leading-relaxed text-white/70">
-                    Premium offshore hosting services with absolute privacy protection. Ignore DMCA and host your content with total freedom.
+                    At DMCAQloud, we deliver Offshore DMCA-Ignored Hosting with blazing-fast NVMe SSD performance, enterprise-grade security, and rock-solid 99.99% uptime trusted by creators, businesses, agencies worldwide.
                 </p>
                 <div class="flex gap-4">
                     <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
