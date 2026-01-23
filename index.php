@@ -61,8 +61,8 @@ $page = 'home';
 
             <!-- Right Side: Image -->
             <div class="relative hidden lg:block">
-                <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-                <img src="/assets/img/hero_illustration.png" alt="Cloud Hosting Infrastructure" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+                <!-- <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div> -->
+                <img src="assets/img/dmca-hero-img.png" alt="Cloud Hosting Infrastructure" class="relative w-full h-auto object-contain transition-transform duration-500" />
             </div>
         </div>
     </section>

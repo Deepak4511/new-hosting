@@ -8,10 +8,11 @@
             <!-- Column 1: Brand & About -->
             <div class="space-y-6">
                 <a href="#" class="flex items-center gap-2 group">
-                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white font-bold text-xl border border-white/10 group-hover:bg-white group-hover:text-wine transition-all duration-300">
+                    <!-- <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white font-bold text-xl border border-white/10 group-hover:bg-white group-hover:text-wine transition-all duration-300">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <span class="text-2xl font-black text-white tracking-tight">DMCA<span class="text-thistle">Q</span>Cloud</span>
+                    <span class="text-2xl font-black text-white tracking-tight">DMCA<span class="text-thistle">Q</span>Cloud</span> -->
+                    <img src="assets/img/footer-logo.webp" alt="logo" class="w-40">
                 </a>
                 <p class="text-sm leading-relaxed text-white/70">
                     At DMCAQloud, we deliver Offshore DMCA-Ignored Hosting with blazing-fast NVMe SSD performance, enterprise-grade security, and rock-solid 99.99% uptime trusted by creators, businesses, agencies worldwide.
