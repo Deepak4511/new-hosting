@@ -58,142 +58,159 @@ include './data/streaming-data.php';
 
 
 <!-- Streaming Server Solutions Section -->
-<section class="py-24 px-6 relative overflow-hidden bg-white">
+<section class="py-24 px-6 relative overflow-hidden bg-slate-50">
     <!-- Background Decor -->
     <div class="absolute inset-0 pointer-events-none -z-10">
-        <div class="absolute left-[-10%] top-[40%] w-[500px] h-[500px] bg-wine/5 rounded-full blur-[80px]"></div>
+        <div class="absolute right-0 top-0 w-2/3 h-full bg-gradient-to-l from-white to-transparent"></div>
     </div>
 
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <!-- Left: Content -->
-        <div class="relative z-10">
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-bold tracking-widest text-deep-purple uppercase bg-deep-purple/5 border border-deep-purple/10 rounded-full">
-                <i class="fas fa-video"></i> STREAMING SERVER SOLUTIONS
-            </span>
+    <div class="max-w-7xl mx-auto space-y-12">
+        <!-- Main Feature Card -->
+        <div class="bg-white rounded-[2.5rem] p-8 lg:p-12 shadow-2xl shadow-slate-200/50 border border-slate-100 grid lg:grid-cols-2 gap-16 items-center relative overflow-hidden">
 
-            <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-8 leading-tight">
-                Ultra-Fast Streaming Servers<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">Buffer-Free Playback.</span>
-            </h2>
+            <!-- Left: Content -->
+            <div class="relative z-10">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">SYSTEMS NOMINAL • V4.2.0</span>
+                </div>
 
-            <p id="streamText" class="text-slate-600 text-lg mb-10 leading-relaxed font-medium min-h-[3.5rem]">
-                High-performance streaming servers optimized for HLS, RTMP and VOD, delivering smooth playback even during peak traffic.
-            </p>
+                <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-6 leading-[1.15]">
+                    Engineered for <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">Zero-Latency</span>
+                    Broadcast.
+                </h2>
 
-            <!-- Trust Points -->
-            <div class="grid grid-cols-2 gap-4 mb-10">
-                <div class="flex items-center gap-3">
-                    <i class="fas fa-check-circle text-wine"></i> <span class="text-slate-700 font-bold text-sm">Low Latency Streaming</span>
+                <p id="streamText" class="text-slate-500 text-lg mb-8 leading-relaxed font-medium min-h-[3.5rem] max-w-lg">
+                    High-performance streaming servers optimized for HLS, RTMP and VOD, delivering smooth playback even during peak traffic.
+                </p>
+
+                <!-- Tabs -->
+                <div class="stream-tabs flex flex-wrap gap-3 mb-10">
+                    <button class="px-6 py-2.5 rounded-lg font-bold text-xs tracking-wide transition-all bg-wine text-white shadow-md uppercase active-tab" onclick="streamUse(this,'Video On Demand (VOD)')">VOD</button>
+                    <button class="px-6 py-2.5 rounded-lg font-bold text-xs tracking-wide transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 uppercase" onclick="streamUse(this,'Live Streaming Platforms')">Live</button>
+                    <button class="px-6 py-2.5 rounded-lg font-bold text-xs tracking-wide transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 uppercase" onclick="streamUse(this,'Adult Streaming Sites')">Adult</button>
+                    <button class="px-6 py-2.5 rounded-lg font-bold text-xs tracking-wide transition-all bg-slate-100 text-slate-600 hover:bg-slate-200 uppercase" onclick="streamUse(this,'OTT Streaming Services')">OTT</button>
                 </div>
-                <div class="flex items-center gap-3">
-                    <i class="fas fa-check-circle text-wine"></i> <span class="text-slate-700 font-bold text-sm">Unlimited Viewers</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <i class="fas fa-check-circle text-wine"></i> <span class="text-slate-700 font-bold text-sm">OBS / RTMP Ready</span>
-                </div>
-                <div class="flex items-center gap-3">
-                    <i class="fas fa-check-circle text-wine"></i> <span class="text-slate-700 font-bold text-sm">24/7 Monitoring</span>
-                </div>
+
+                <a href="https://t.me/Dmcaqloud" class="inline-flex items-center justify-center gap-3 bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
+                    Initialize Consultant <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
             </div>
 
-            <!-- Stats -->
-            <div class="grid grid-cols-3 gap-6 border-y border-slate-100 py-8 mb-10">
-                <div class="text-center">
-                    <strong id="s1" class="block text-3xl font-black text-deep-purple mb-1">0</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Avg Latency (ms)</span>
-                </div>
-                <div class="text-center border-l border-slate-100">
-                    <strong id="s2" class="block text-3xl font-black text-deep-purple mb-1">0</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Concurrent Viewers</span>
-                </div>
-                <div class="text-center border-l border-slate-100">
-                    <strong id="s3" class="block text-3xl font-black text-deep-purple mb-1">0</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Stream Uptime %</span>
+            <!-- Right: Terminal/Rack Visual -->
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-wine/20 to-deep-purple/20 rounded-[2rem] blur-xl opacity-50"></div>
+                <div class="bg-[#0b0c15] text-slate-300 rounded-2xl p-8 shadow-2xl font-mono text-sm relative border border-white/5 mx-auto max-w-md w-full z-10">
+                    <!-- Header -->
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-4">
+                        <div class="flex gap-1.5 pt-1">
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase mb-1">Rack-A // Blade-01</div>
+                        </div>
+                    </div>
+
+                    <!-- Specs -->
+                    <div class="space-y-4 text-[11px] tracking-wide">
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• PROTOCOL</span>
+                            <span class="text-white font-bold">HLS/RTMP/DASH</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• CPU CLUSTER</span>
+                            <span class="text-white font-bold">AMD Ryzen / Xeon</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• RAM BANK</span>
+                            <span class="text-white font-bold">32GB – 256GB ECC</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• PORT LINK</span>
+                            <span class="text-white font-bold">1Gbps – 10Gbps</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• BUFFER CACHE</span>
+                            <span class="text-white font-bold">NVMe SSD</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• ENCODER</span>
+                            <span class="text-white font-bold">OBS / FFmpeg</span>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-end">
+                        <div>
+                            <div class="text-[9px] text-slate-500 font-bold uppercase mb-1">Provisioned IP</div>
+                            <div class="text-xs text-wine font-bold bg-wine/10 px-2 py-1 rounded border border-wine/20">10.245.0.x / Cluster</div>
+                        </div>
+                        <div class="flex gap-1 mb-1">
+                            <div class="w-1 h-1 bg-green-500 rounded-full animate-pulse"></div>
+                            <div class="w-1 h-1 bg-green-500 rounded-full animate-pulse delay-75"></div>
+                            <div class="w-1 h-1 bg-green-500 rounded-full animate-pulse delay-150"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Tabs -->
-            <div class="stream-tabs flex flex-wrap gap-3 mb-10">
-                <button class="px-5 py-2 rounded-lg font-bold text-sm transition-all bg-wine text-white shadow-md active-tab" onclick="streamUse(this,'Video On Demand (VOD)')">VOD</button>
-                <button class="px-5 py-2 rounded-lg font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" onclick="streamUse(this,'Live Streaming Platforms')">Live</button>
-                <button class="px-5 py-2 rounded-lg font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" onclick="streamUse(this,'Adult Streaming Sites')">Adult</button>
-                <button class="px-5 py-2 rounded-lg font-bold text-sm transition-all bg-slate-100 text-slate-600 hover:bg-slate-200" onclick="streamUse(this,'OTT Streaming Services')">OTT</button>
-            </div>
-
-            <a href="https://t.me/Dmcaqloud" class="inline-flex items-center justify-center gap-3 bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20 hover:-translate-y-1 w-full sm:w-auto">
-                <i class="fab fa-telegram-plane"></i> Talk to Streaming Expert
-            </a>
         </div>
 
-        <!-- Right: Terminal Visual -->
-        <div class="relative">
-            <!-- Decorative BG -->
-            <div class="absolute -inset-4 bg-gradient-to-bl from-[#301934] to-[#702963] rounded-[2.5rem] rotate-1 opacity-10"></div>
+        <!-- Bottom Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Global Mesh -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="flex justify-between mb-6">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center"><i class="fas fa-globe"></i></div>
+                    <span class="text-[10px] font-bold text-slate-300 uppercase">Edge Distribution</span>
+                </div>
+                <h4 class="font-bold text-deep-purple mb-2">Global Mesh Network</h4>
+                <p class="text-xs text-slate-500 leading-relaxed mb-4">32 points of presence globally, ensuring your stream starts under 1s regardless of viewer location.</p>
+                <div class="flex gap-1 flex-wrap">
+                    <span class="px-2 py-1 bg-slate-50 text-slate-400 text-[10px] font-bold rounded uppercase">NL</span>
+                    <span class="px-2 py-1 bg-slate-50 text-slate-400 text-[10px] font-bold rounded uppercase">DE</span>
+                    <span class="px-2 py-1 bg-slate-50 text-slate-400 text-[10px] font-bold rounded uppercase">US</span>
+                    <span class="px-2 py-1 bg-slate-50 text-slate-400 text-[10px] font-bold rounded uppercase">SG</span>
+                </div>
+            </div>
 
-            <div class="relative bg-[#1a0f1d] rounded-[2rem] p-10 border border-white/5 shadow-2xl overflow-hidden group font-mono text-sm leading-relaxed">
-                <!-- Grid Pattern -->
-                <div class="absolute inset-0 opacity-[0.05]" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
-
-                <!-- Terminal Header -->
-                <div class="flex items-center gap-2 mb-6 opacity-50 border-b border-white/10 pb-4">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                    <span class="ml-2 text-xs">streaming_config.conf</span>
+            <!-- Live Stats -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                <div class="absolute right-0 top-0 w-24 h-24 bg-wine/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                <div class="flex justify-between mb-8 relative z-10">
+                    <div class="w-10 h-10 rounded-full bg-wine/10 text-wine flex items-center justify-center animate-pulse"><i class="fas fa-wifi"></i></div>
+                    <span class="text-[10px] font-bold text-green-500 bg-green-50 px-2 py-1 rounded-full border border-green-100">+ 12% PEAK</span>
                 </div>
 
-                <div class="relative z-10 space-y-4">
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Protocol Support:</span>
-                        <span class="text-white">HLS / RTMP / DASH</span>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <strong id="s1" class="block text-3xl font-black text-deep-purple mb-0.5">120</strong>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Latency (ms)</span>
                     </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Encoder:</span>
-                        <span class="text-white">OBS / FFmpeg</span>
+                    <div class="text-right">
+                        <strong id="s2" class="block text-xl font-black text-deep-purple mb-0.5">18k</strong>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Viewers</span>
                     </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">CPU:</span>
-                        <span class="text-white">AMD Ryzen / Intel Xeon</span>
-                    </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">RAM:</span>
-                        <span class="text-white">32GB – 256GB</span>
-                    </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Storage:</span>
-                        <span class="text-white">NVMe SSD</span>
-                    </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Port Speed:</span>
-                        <span class="text-white">1Gbps – 10Gbps</span>
-                    </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Bandwidth:</span>
-                        <span class="text-white">High / Unmetered</span>
-                    </div>
-                    <div class="flex justify-between border-b border-white/5 pb-2">
-                        <span class="text-red-purple font-bold">Locations:</span>
-                        <span class="text-white flex gap-2">
-                            <img src="https://flagcdn.com/nl.svg" class="w-4 rounded-sm" alt="NL">
-                            <img src="https://flagcdn.com/de.svg" class="w-4 rounded-sm" alt="DE">
-                            <img src="https://flagcdn.com/us.svg" class="w-4 rounded-sm" alt="US">
-                        </span>
-                    </div>
+                </div>
+                <!-- Hidden s3 for script compatibility if needed, or visual -->
+                <div class="hidden"><span id="s3">99</span></div>
+            </div>
 
-                    <div class="pt-6 grid grid-cols-2 gap-4">
-                        <div class="bg-white/5 p-3 rounded border border-white/10 flex items-center gap-2 text-xs text-green-400">
-                            <i class="fas fa-bolt"></i> Low-Latency Delivery
-                        </div>
-                        <div class="bg-white/5 p-3 rounded border border-white/10 flex items-center gap-2 text-xs text-green-400">
-                            <i class="fas fa-shield-alt"></i> Anti-DDoS Protection
-                        </div>
-                        <div class="bg-white/5 p-3 rounded border border-white/10 flex items-center gap-2 text-xs text-green-400">
-                            <i class="fas fa-chart-area"></i> Real-Time Monitoring
-                        </div>
-                        <div class="bg-white/5 p-3 rounded border border-white/10 flex items-center gap-2 text-xs text-green-400">
-                            <i class="fas fa-rocket"></i> Instant Deployment
-                        </div>
-                    </div>
+            <!-- Protection -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="flex justify-between mb-6">
+                    <div class="w-10 h-10 rounded-full bg-green-50 text-green-500 flex items-center justify-center"><i class="fas fa-shield-alt"></i></div>
+                    <span class="text-[10px] font-bold text-slate-300 uppercase">Protection</span>
+                </div>
+                <h4 class="font-bold text-deep-purple mb-2">Anti-DDoS Shield</h4>
+                <p class="text-xs text-slate-500 leading-relaxed mb-4">Layer 7 protection with automatic traffic scrubbing and zero false positives.</p>
+                <div class="flex items-center gap-2 text-[10px] text-green-600 font-bold">
+                    <i class="fas fa-check-circle"></i> Active Shielding
                 </div>
             </div>
         </div>
@@ -501,55 +518,80 @@ include './data/streaming-data.php';
 
 
 <!-- Trusted Stats -->
-<?php include './inc/trusted-stats.php'; ?>
 
 <!-- FAQ Section -->
-<section class="py-24 px-6 max-w-4xl mx-auto">
-    <div class="text-center mb-16">
-        <h2 class="text-4xl font-black text-deep-purple mb-4">Frequently Asked Questions</h2>
-        <p class="text-slate-500">You secure, we stream.</p>
-    </div>
+<section class="py-24 px-6 relative overflow-hidden bg-slate-50">
+    <!-- Background Elements -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-wine/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-deep-purple/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-    <div class="space-y-4">
-        <?php foreach ($STREAMING_FAQ as $i => $item): ?>
-            <div class="bg-white rounded-xl border border-slate-100 overflow-hidden transition-all duration-300 hover:border-wine/30 group">
-                <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full px-6 py-5 text-left flex justify-between items-center cursor-pointer focus:outline-none">
-                    <span class="text-lg font-bold text-slate-700 transition-colors group-hover:text-wine"><?php echo $item['question']; ?></span>
-                    <div class="relative w-6 h-6 flex items-center justify-center">
-                        <div class="absolute w-4 h-0.5 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-minus-<?php echo $i; ?>"></div>
-                        <div class="absolute w-0.5 h-4 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-plus-<?php echo $i; ?>"></div>
-                    </div>
-                </button>
-                <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-slate-50">
-                    <div class="px-6 pb-6 pt-2 text-base text-slate-600 leading-7 font-medium">
-                        <?php echo $item['answer']; ?>
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-24 items-start relative z-10">
+        <!-- Left Side -->
+        <div class="lg:col-span-5 text-left sticky top-24">
+            <span class="inline-block text-wine font-bold tracking-[0.2em] uppercase text-sm mb-6">FAQ</span>
+            <h2 class="text-5xl md:text-7xl font-black text-deep-purple mb-8 tracking-tight">All the <br> details.</h2>
+            <p class="text-slate-600 text-xl font-medium max-w-sm leading-relaxed">
+                Got a question? We're here to help. If you don't see your question here, drop us a line.
+            </p>
+
+            <a href="contact.php" class="hidden lg:inline-flex items-center gap-2 mt-12 text-deep-purple font-bold border-b border-deep-purple/30 pb-1 hover:text-wine hover:border-wine transition-all">
+                Contact Support <i class="fas fa-arrow-right text-xs transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="lg:col-span-7 space-y-4">
+            <?php foreach ($STREAMING_FAQ as $i => $item): ?>
+                <div class="group relative bg-white border border-slate-200 rounded-[2rem] overflow-hidden hover:border-wine/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full p-6 md:p-8 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg md:text-xl font-bold text-deep-purple pr-8"><?php echo $item['question']; ?></span>
+
+                        <div class="relative w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-wine/10 transition-colors">
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-opacity duration-300" id="icon-minus-<?php echo $i; ?>" style="opacity: 0;"></div>
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300 rotate-90" id="icon-plus-v-<?php echo $i; ?>"></div>
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300" id="icon-plus-h-<?php echo $i; ?>"></div>
+                        </div>
+                    </button>
+
+                    <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity,margin] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden max-h-0 opacity-0 bg-slate-50/50">
+                        <div class="px-6 md:px-8 pb-8 pt-0 text-lg text-slate-500 leading-relaxed font-medium">
+                            <?php echo $item['answer']; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
     </div>
-</section>
 
+    <script>
+        function toggleFaq(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const minus = document.getElementById(`icon-minus-${index}`);
+            const plusV = document.getElementById(`icon-plus-v-${index}`);
+            const plusH = document.getElementById(`icon-plus-h-${index}`);
 
-</main>
-<script>
-    function toggleFaq(index) {
-        const answer = document.getElementById(`faq-answer-${index}`);
-        const minus = document.getElementById(`icon-minus-${index}`);
-        const plus = document.getElementById(`icon-plus-${index}`);
-        const isOpen = !answer.classList.contains('max-h-0');
+            const isOpen = !answer.classList.contains('max-h-0');
 
-        if (isOpen) {
-            answer.classList.add('max-h-0', 'opacity-0');
-            answer.classList.remove('max-h-96', 'opacity-100');
-            plus.classList.remove('rotate-90', 'opacity-0');
-            minus.classList.remove('rotate-180');
-        } else {
-            answer.classList.remove('max-h-0', 'opacity-0');
-            answer.classList.add('max-h-96', 'opacity-100');
-            plus.classList.add('rotate-90', 'opacity-0');
-            minus.classList.add('rotate-180');
+            if (isOpen) {
+                // Close
+                answer.classList.add('max-h-0', 'opacity-0');
+                answer.classList.remove('max-h-[500px]', 'opacity-100');
+
+                // Icon to Plus
+                minus.style.opacity = '0';
+                plusV.style.transform = 'rotate(90deg)';
+                plusV.style.opacity = '1';
+            } else {
+                // Open
+                answer.classList.remove('max-h-0', 'opacity-0');
+                answer.classList.add('max-h-[500px]', 'opacity-100');
+
+                // Icon to Minus
+                minus.style.opacity = '1';
+                plusV.style.transform = 'rotate(0deg)';
+                plusV.style.opacity = '0';
+            }
         }
-    }
-</script>
+    </script>
+</section>
 <?php include './inc/footer.php'; ?>

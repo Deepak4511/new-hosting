@@ -10,7 +10,7 @@ include './data/video-data.php';
         <div class="text-center lg:text-left">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-wine/10 bg-white/60 text-wine text-xs font-bold mb-6 shadow-sm backdrop-blur-md mx-auto lg:mx-0">
                 <span class="flex h-2 w-2 rounded-full bg-red-purple animate-pulse"></span>
-                Optimized Networks
+                FASTEST PERFORMANCE
             </div>
             <h1 class="text-5xl md:text-6xl font-black text-deep-purple mb-6 tracking-tight leading-tight">
                 <?php echo $VIDEO_HERO['title']; ?>
@@ -39,8 +39,8 @@ include './data/video-data.php';
     <!-- Header & Filters -->
     <div class=" items-center mb-12 gap-8">
         <div class="text-center  w-full xl:w-auto">
-            <h2 class="text-4xl font-black text-deep-purple mb-4">Ultra-Fast Video Servers for VOD</h2>
-            <p class="text-slate-500 text-lg mb-4">Massive Storage. Unmetered Bandwidth.</p>
+            <h2 class="text-4xl font-black text-deep-purple mb-4">Ultra‑Fast Video Servers for VOD</h2>
+            <p class="text-slate-500 text-lg mb-4">99.99% uptime, NVMe speed, and adaptive streaming go from upload to publish in minutes.</p>
         </div>
 
         <?php
@@ -55,165 +55,161 @@ include './data/video-data.php';
         ?>
 </section>
 
-<!-- Eco Server Banner -->
-<?php include './inc/eco-server-banner.php'; ?>
 
 <!-- Video Server Infrastructure Section -->
-<section class="py-24 px-6 relative overflow-hidden bg-white">
+<section class="py-24 px-6 relative overflow-hidden bg-slate-50">
     <!-- Background Decor -->
     <div class="absolute inset-0 pointer-events-none -z-10">
-        <div class="absolute right-[-10%] top-[40%] w-[500px] h-[500px] bg-red-purple/5 rounded-full blur-[80px]"></div>
+        <div class="absolute left-0 top-0 w-2/3 h-full bg-gradient-to-r from-white to-transparent"></div>
     </div>
 
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <!-- Left: Content -->
-        <div class="relative z-10">
-            <span class="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-bold tracking-widest text-deep-purple uppercase bg-deep-purple/5 border border-deep-purple/10 rounded-full">
-                <i class="fas fa-video"></i> VIDEO SERVER INFRASTRUCTURE
-            </span>
+    <div class="max-w-7xl mx-auto space-y-12">
+        <!-- Main Feature Card -->
+        <div class="bg-white rounded-[2.5rem] p-8 lg:p-12 shadow-2xl shadow-slate-200/50 border border-slate-100 grid lg:grid-cols-2 gap-16 items-center relative overflow-hidden">
 
-            <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-8 leading-tight">
-                Blazing-Fast Video Servers<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">Built for Massive Traffic.</span>
-            </h2>
+            <!-- Left: Content -->
+            <div class="relative z-10">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                    </span>
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">MEDIA NODE • V2.0</span>
+                </div>
 
-            <p class="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
-                Enterprise-grade video servers optimized for heavy <strong class="text-deep-purple bg-deep-purple/5 px-1 rounded">MP4 and HLS workloads</strong>.
-                Designed for instant playback, stable downloads, and viral traffic spikes.
-            </p>
+                <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-6 leading-[1.15]">
+                    Blazing-Fast Video Servers <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">Built for Massive Traffic.</span>
+                </h2>
 
-            <!-- Points -->
-            <div class="space-y-4 mb-12">
-                <div class="flex items-center gap-4 group">
-                    <div class="w-6 h-6 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center text-green-600 text-xs">
-                        <i class="fas fa-check"></i>
+                <p class="text-slate-500 text-lg mb-8 leading-relaxed font-medium max-w-lg">
+                    Enterprise-grade video servers optimized for heavy <strong class="text-deep-purple bg-deep-purple/5 px-1 rounded">MP4 and HLS workloads</strong>. Designed for instant playback, stable downloads, and viral traffic spikes.
+                </p>
+
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-xs"><i class="fas fa-check"></i></div>
+                        <span class="text-slate-600 font-bold text-sm">Optimized Disk I/O for Large Videos</span>
                     </div>
-                    <span class="text-slate-600 font-semibold group-hover:text-deep-purple transition-colors">Optimized Disk I/O for Large Videos</span>
-                </div>
-                <div class="flex items-center gap-4 group">
-                    <div class="w-6 h-6 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center text-green-600 text-xs">
-                        <i class="fas fa-check"></i>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-xs"><i class="fas fa-check"></i></div>
+                        <span class="text-slate-600 font-bold text-sm">Handles Millions of Daily Plays</span>
                     </div>
-                    <span class="text-slate-600 font-semibold group-hover:text-deep-purple transition-colors">Handles Millions of Daily Plays</span>
-                </div>
-                <div class="flex items-center gap-4 group">
-                    <div class="w-6 h-6 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center text-green-600 text-xs">
-                        <i class="fas fa-check"></i>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-xs"><i class="fas fa-check"></i></div>
+                        <span class="text-slate-600 font-bold text-sm">Adult & DMCA-Friendly Environment</span>
                     </div>
-                    <span class="text-slate-600 font-semibold group-hover:text-deep-purple transition-colors">Adult & DMCA-Friendly Environment</span>
                 </div>
-                <div class="flex items-center gap-4 group">
-                    <div class="w-6 h-6 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center text-green-600 text-xs">
-                        <i class="fas fa-check"></i>
-                    </div>
-                    <span class="text-slate-600 font-semibold group-hover:text-deep-purple transition-colors">No Speed Throttling</span>
-                </div>
+
+                <a href="https://t.me/Dmcaqloud" class="inline-flex items-center justify-center gap-3 bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
+                    Deploy Video Node <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
             </div>
 
-            <!-- Metrics -->
-            <div class="grid grid-cols-3 gap-6 border-t border-slate-100 pt-8 mb-10">
-                <div class="text-center group">
-                    <strong class="block text-3xl font-black text-deep-purple mb-1 group-hover:scale-110 transition-transform">0.8s</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Load Time</span>
-                </div>
-                <div class="text-center group border-l border-slate-100">
-                    <strong class="block text-3xl font-black text-deep-purple mb-1 group-hover:scale-110 transition-transform">30K+</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Daily Plays</span>
-                </div>
-                <div class="text-center group border-l border-slate-100">
-                    <strong class="block text-3xl font-black text-deep-purple mb-1 group-hover:scale-110 transition-transform">99.9%</strong>
-                    <span class="text-xs uppercase font-bold text-slate-400 tracking-wider">Uptime</span>
-                </div>
-            </div>
-
-            <a href="https://t.me/Dmcaqloud" class="inline-flex items-center justify-center gap-3 bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/20 hover:-translate-y-1 w-full sm:w-auto">
-                <i class="fab fa-telegram-plane"></i> Talk to Video Server Expert
-            </a>
-        </div>
-
-        <!-- Right: Visual -->
-        <div class="relative">
-            <!-- Card Content -->
-            <div class="bg-[#1a0f1d] rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl relative group">
-                <!-- Player Header -->
-                <div class="bg-black/40 p-4 flex items-center gap-3 border-b border-white/5">
-                    <div class="flex gap-2">
-                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-400/80"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-                    </div>
-                    <div class="mx-auto text-[10px] font-mono text-slate-500 uppercase tracking-wider">player_preview.mp4</div>
-                </div>
-
-                <!-- Fake Player -->
-                <div class="relative aspect-video bg-[#0f0811] flex items-center justify-center overflow-hidden border-b border-white/5 group-hover:border-wine/30 transition-colors">
-                    <!-- Animated Waveform BG -->
-                    <div class="absolute inset-0 opacity-20 flex items-end justify-center gap-1 pb-10">
-                        <div class="w-2 bg-purple-500 h-10 animate-pulse"></div>
-                        <div class="w-2 bg-purple-500 h-16 animate-pulse [animation-delay:0.1s]"></div>
-                        <div class="w-2 bg-purple-500 h-8 animate-pulse [animation-delay:0.2s]"></div>
-                        <div class="w-2 bg-purple-500 h-20 animate-pulse [animation-delay:0.3s]"></div>
-                        <div class="w-2 bg-purple-500 h-12 animate-pulse [animation-delay:0.4s]"></div>
-                    </div>
-
-                    <div class="w-20 h-20 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white text-3xl pl-2 shadow-2xl shadow-purple-900/40 group-hover:scale-110 group-hover:bg-wine transition-all duration-300 z-10">
-                        <i class="fas fa-play"></i>
-                    </div>
-                </div>
-
-                <!-- Specs Panel -->
-                <div class="p-8">
-                    <div class="grid grid-cols-2 gap-y-4 gap-x-8 text-sm border-b border-white/5 pb-6 mb-6">
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Video Type</span>
-                            <span class="text-white font-medium">MP4 / HLS</span>
+            <!-- Right: Terminal/Rack Visual -->
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-wine/20 to-deep-purple/20 rounded-[2rem] blur-xl opacity-50"></div>
+                <div class="bg-[#0b0c15] text-slate-300 rounded-2xl p-8 shadow-2xl font-mono text-sm relative border border-white/5 mx-auto max-w-md w-full z-10">
+                    <!-- Header -->
+                    <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-4">
+                        <div class="flex gap-1.5 pt-1">
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
                         </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Use Case</span>
-                            <span class="text-white font-medium">Hosting / Adult</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">CPU</span>
-                            <span class="text-white font-medium">Ryzen / Xeon</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">RAM</span>
-                            <span class="text-white font-medium">32GB – 256GB</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Storage</span>
-                            <span class="text-white font-medium">NVMe SSD</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Network</span>
-                            <span class="text-white font-medium">1–10Gbps</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Bandwidth</span>
-                            <span class="text-white font-medium">High / Unmetered</span>
-                        </div>
-                        <div>
-                            <span class="block text-slate-500 text-xs font-bold uppercase mb-1">Locations</span>
-                            <span class="text-white font-medium flex gap-2">
-                                <img src="https://flagcdn.com/nl.svg" class="w-4 rounded-sm" alt="NL">
-                                <img src="https://flagcdn.com/de.svg" class="w-4 rounded-sm" alt="DE">
-                                <img src="https://flagcdn.com/us.svg" class="w-4 rounded-sm" alt="US">
-                            </span>
+                        <div class="text-right">
+                            <div class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase mb-1">ENCODE_RACK // 04</div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold flex items-center gap-2">
-                            <i class="fas fa-shield-alt"></i> Anti-DDoS Protection
-                        </span>
-                        <span class="px-3 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold flex items-center gap-2">
-                            <i class="fas fa-rocket"></i> Instant Deployment
-                        </span>
+                    <!-- Specs -->
+                    <div class="space-y-4 text-[11px] tracking-wide">
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• FORMATS</span>
+                            <span class="text-white font-bold">MP4 / HLS / WEBM</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• SOFTWARE</span>
+                            <span class="text-white font-bold">FFMPEG / NGINX-VOD</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• STORAGE</span>
+                            <span class="text-white font-bold">NVMe RAID-10</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• PORT SPEED</span>
+                            <span class="text-white font-bold">10Gbps UNMETERED</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• CACHING</span>
+                            <span class="text-white font-bold">REDIS / VARNISH</span>
+                        </div>
+                        <div class="flex justify-between items-center group cursor-default">
+                            <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• LOCATION</span>
+                            <span class="text-white font-bold">OFFSHORE (NL)</span>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-end">
+                        <div>
+                            <div class="text-[9px] text-slate-500 font-bold uppercase mb-1">Stream Status</div>
+                            <div class="text-xs text-purple-400 font-bold bg-purple-500/10 px-2 py-1 rounded border border-purple-500/20">OPTIMIZED</div>
+                        </div>
+                        <div class="flex gap-1 mb-1">
+                            <div class="w-1 h-1 bg-purple-500 rounded-full animate-pulse"></div>
+                            <div class="w-1 h-1 bg-purple-500 rounded-full animate-pulse delay-75"></div>
+                            <div class="w-1 h-1 bg-purple-500 rounded-full animate-pulse delay-150"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Bottom Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Load Time -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="flex justify-between mb-6">
+                    <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center"><i class="fas fa-bolt"></i></div>
+                    <span class="text-[10px] font-bold text-slate-300 uppercase">Latency</span>
+                </div>
+                <h4 class="font-bold text-deep-purple mb-2">Instant Load Time</h4>
+                <p class="text-xs text-slate-500 leading-relaxed mb-4">Optimized routing ensures your videos start playing in under 0.8 seconds globally.</p>
+                <div class="flex items-center gap-2 text-[10px] text-blue-600 font-bold">
+                    <i class="fas fa-check-circle"></i>
+                    < 0.8s TTFB
+                        </div>
+                </div>
+
+                <!-- Daily Plays -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-wine/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="flex justify-between mb-6 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-wine/10 text-wine flex items-center justify-center"><i class="fas fa-play"></i></div>
+                        <span class="text-[10px] font-bold text-wine bg-wine/10 px-2 py-1 rounded-full border border-wine/20">HIGH TRAFFIC</span>
+                    </div>
+                    <h4 class="font-bold text-deep-purple mb-2">30K+ Daily Plays</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Built to handle viral spikes. Serve millions of requests without buffering or downtime.</p>
+                    <div class="flex items-center gap-2 text-[10px] text-wine font-bold">
+                        <i class="fas fa-check-circle"></i> Viral Ready
+                    </div>
+                </div>
+
+                <!-- Uptime -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="flex justify-between mb-6">
+                        <div class="w-10 h-10 rounded-full bg-green-50 text-green-500 flex items-center justify-center"><i class="fas fa-server"></i></div>
+                        <span class="text-[10px] font-bold text-slate-300 uppercase">Reliability</span>
+                    </div>
+                    <h4 class="font-bold text-deep-purple mb-2">99.9% Uptime</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Redundant network and power ensure your content is always available to your viewers.</p>
+                    <div class="flex items-center gap-2 text-[10px] text-green-600 font-bold">
+                        <i class="fas fa-check-circle"></i> SLA Guaranteed
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
 <!-- Features ZigZag -->
@@ -442,7 +438,7 @@ include './data/video-data.php';
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-black text-deep-purple mb-4">Netherlands Video Hosting</h2>
-            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Fast, Secure, and DMCA Ignored servers tailored for content creators.</p>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Fast, Secure & DMCA Ignored Offshore Hosting for Adult Content</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -462,54 +458,82 @@ include './data/video-data.php';
 </section>
 
 <!-- Trusted Stats -->
-<?php include './inc/trusted-stats.php'; ?>
 
 <!-- FAQ Section -->
-<section class="py-24 px-6 max-w-4xl mx-auto">
-    <div class="text-center mb-16">
-        <h2 class="text-4xl font-black text-deep-purple mb-4">Frequently Asked Questions</h2>
-        <p class="text-slate-500">Answers to your video hosting queries.</p>
-    </div>
+<section class="py-24 px-6 relative overflow-hidden bg-slate-50">
+    <!-- Background Elements -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-wine/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-deep-purple/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-    <div class="space-y-4">
-        <?php foreach ($VIDEO_FAQ as $i => $item): ?>
-            <div class="bg-white rounded-xl border border-slate-100 overflow-hidden transition-all duration-300 hover:border-wine/30 group">
-                <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full px-6 py-5 text-left flex justify-between items-center cursor-pointer focus:outline-none">
-                    <span class="text-lg font-bold text-slate-700 transition-colors group-hover:text-wine"><?php echo $item['question']; ?></span>
-                    <div class="relative w-6 h-6 flex items-center justify-center">
-                        <div class="absolute w-4 h-0.5 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-minus-<?php echo $i; ?>"></div>
-                        <div class="absolute w-0.5 h-4 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-plus-<?php echo $i; ?>"></div>
-                    </div>
-                </button>
-                <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-slate-50">
-                    <div class="px-6 pb-6 pt-2 text-base text-slate-600 leading-7 font-medium">
-                        <?php echo $item['answer']; ?>
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-24 items-start relative z-10">
+        <!-- Left Side -->
+        <div class="lg:col-span-5 text-left sticky top-24">
+            <span class="inline-block text-wine font-bold tracking-[0.2em] uppercase text-sm mb-6">FAQ</span>
+            <h2 class="text-5xl md:text-7xl font-black text-deep-purple mb-8 tracking-tight">All the <br> details.</h2>
+            <p class="text-slate-600 text-xl font-medium max-w-sm leading-relaxed">
+                Got a question? We're here to help. If you don't see your question here, drop us a line.
+            </p>
+
+            <a href="#contact" class="hidden lg:inline-flex items-center gap-2 mt-12 text-deep-purple font-bold border-b border-deep-purple/30 pb-1 hover:text-wine hover:border-wine transition-all">
+                Contact Support <i class="fas fa-arrow-right text-xs transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="lg:col-span-7 space-y-4">
+            <?php foreach ($VIDEO_FAQ as $i => $item): ?>
+                <div class="group relative bg-white border border-slate-200 rounded-[2rem] overflow-hidden hover:border-wine/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full p-6 md:p-8 text-left flex justify-between items-center focus:outline-none">
+                        <span class="text-lg md:text-xl font-bold text-deep-purple pr-8"><?php echo $item['question']; ?></span>
+
+                        <div class="relative w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-wine/10 transition-colors">
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-opacity duration-300" id="icon-minus-<?php echo $i; ?>" style="opacity: 0;"></div>
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300 rotate-90" id="icon-plus-v-<?php echo $i; ?>"></div>
+                            <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300" id="icon-plus-h-<?php echo $i; ?>"></div>
+                        </div>
+                    </button>
+
+                    <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity,margin] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden max-h-0 opacity-0 bg-slate-50/50">
+                        <div class="px-6 md:px-8 pb-8 pt-0 text-lg text-slate-500 leading-relaxed font-medium">
+                            <?php echo $item['answer']; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
     </div>
-</section>
 
-</main>
-<script>
-    function toggleFaq(index) {
-        const answer = document.getElementById(`faq-answer-${index}`);
-        const minus = document.getElementById(`icon-minus-${index}`);
-        const plus = document.getElementById(`icon-plus-${index}`);
-        const isOpen = !answer.classList.contains('max-h-0');
+    <script>
+        function toggleFaq(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const minus = document.getElementById(`icon-minus-${index}`);
+            const plusV = document.getElementById(`icon-plus-v-${index}`);
+            const plusH = document.getElementById(`icon-plus-h-${index}`);
+            // Button is parent of icon container
+            // const btn = answer.previousElementSibling; 
 
-        if (isOpen) {
-            answer.classList.add('max-h-0', 'opacity-0');
-            answer.classList.remove('max-h-96', 'opacity-100');
-            plus.classList.remove('rotate-90', 'opacity-0');
-            minus.classList.remove('rotate-180');
-        } else {
-            answer.classList.remove('max-h-0', 'opacity-0');
-            answer.classList.add('max-h-96', 'opacity-100');
-            plus.classList.add('rotate-90', 'opacity-0');
-            minus.classList.add('rotate-180');
+            const isOpen = !answer.classList.contains('max-h-0');
+
+            if (isOpen) {
+                // Close
+                answer.classList.add('max-h-0', 'opacity-0');
+                answer.classList.remove('max-h-[500px]', 'opacity-100');
+
+                // Icon to Plus
+                minus.style.opacity = '0';
+                plusV.style.transform = 'rotate(90deg)';
+                plusV.style.opacity = '1';
+            } else {
+                // Open
+                answer.classList.remove('max-h-0', 'opacity-0');
+                answer.classList.add('max-h-[500px]', 'opacity-100');
+
+                // Icon to Minus
+                minus.style.opacity = '1';
+                plusV.style.transform = 'rotate(0deg)';
+                plusV.style.opacity = '0';
+            }
         }
-    }
-</script>
+    </script>
+</section>
 <?php include './inc/footer.php'; ?>

@@ -1,123 +1,41 @@
 <?php
 
 $VIDEO_HERO = [
-    'title' => '100% DMCA Offshore <br> Video Hosting',
-    'subtitle' => 'Unmetered bandwidth and Massive Storage for Tube Sites, Cinema Platforms, and VOD Services.',
+    'title' => '100% DMCA Offshore Video Hosting',
+    'subtitle' => 'Perfect for streaming, adult content, archives, and private media.',
     'cta' => 'Order Video Server'
 ];
 
-$VIDEO_SERVERS = [
-    [
-        'cpu' => 'Intel Xeon E3-1245 v5',
-        'ram' => '32 GB DDR4',
-        'storage' => '2 x 480 GB SSD',
-        'bandwidth' => '1 Gbps Unmetered',
-        'price' => '139.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'AMD Ryzen 5 3600',
-        'ram' => '64 GB DDR4',
-        'storage' => '2 x 1 TB NVMe',
-        'bandwidth' => '1 Gbps Unmetered',
-        'price' => '159.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Intel Xeon E5-1650 v4',
-        'ram' => '64 GB DDR4',
-        'storage' => '4 x 4 TB HDD',
-        'bandwidth' => '1 Gbps Unmetered',
-        'price' => '189.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'AMD Ryzen 7 3700X',
-        'ram' => '64 GB RAM',
-        'storage' => '2 x 2 TB NVMe',
-        'bandwidth' => '1 Gbps Unmetered',
-        'price' => '229.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Intel Xeon Silver 4214',
-        'ram' => '64 GB DDR4',
-        'storage' => '4 x 8 TB HDD',
-        'bandwidth' => '2 Gbps Unmetered',
-        'price' => '299.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'AMD Ryzen 9 5950X',
-        'ram' => '128 GB DDR4',
-        'storage' => '2 x 3.84 TB NVMe',
-        'bandwidth' => '2 Gbps Unmetered',
-        'price' => '349.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual Xeon E5-2680 v4',
-        'ram' => '128 GB DDR4',
-        'storage' => '8 x 4 TB HDD',
-        'bandwidth' => '2 Gbps Dedicated',
-        'price' => '399.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual Xeon Gold 6138',
-        'ram' => '256 GB DDR4',
-        'storage' => '12 x 8 TB HDD',
-        'bandwidth' => '5 Gbps Dedicated',
-        'price' => '599.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 7402',
-        'ram' => '256 GB DDR4',
-        'storage' => '24 x 10 TB HDD',
-        'bandwidth' => '10 Gbps Dedicated',
-        'price' => '899.00',
-        'setup' => 'Free Setup'
-    ],
-    [
-        'cpu' => 'Dual AMD EPYC 7742',
-        'ram' => '512 GB DDR4',
-        'storage' => '36 x 16 TB HDD',
-        'bandwidth' => '20 Gbps Dedicated',
-        'price' => '1899.00',
-        'setup' => 'Free Setup'
-    ],
-];
 
 $VIDEO_FEATURES = [
     [
         'title' => 'DMCA Ignored Hosting',
-        'desc' => 'Fully anonymous and disregarded DMCA complaints for your video library.',
+        'desc' => 'Fully safe for adult video content with no takedowns.',
         'icon' => 'fas fa-shield-alt'
     ],
     [
         'title' => 'Ultra Fast Streaming',
-        'desc' => 'Optimized routing for buffer-free playback anywhere in the world.',
+        'desc' => 'Smooth HD & 4K video playback directly from Netherlands servers.',
         'icon' => 'fas fa-tachometer-alt'
     ],
     [
         'title' => 'High Storage & Bandwidth',
-        'desc' => 'Up to 500TB of storage and 40Gbps uplinks for massive VOD collections.',
+        'desc' => 'Store large adult video libraries easily with scalable resources.',
         'icon' => 'fas fa-hdd'
     ],
     [
         'title' => 'Netherlands Offshore Location',
-        'desc' => 'Hosted in TIER III Amsterdam DCs with strict privacy laws.',
+        'desc' => 'Privacy-friendly servers with strong anonymity and low latency.',
         'icon' => 'fas fa-globe-europe'
     ],
     [
         'title' => 'Secure & Encrypted',
-        'desc' => 'Full disk encryption available and secure physical access protocols.',
+        'desc' => 'SSL, firewall, and server-level security to protect your content.',
         'icon' => 'fas fa-lock'
     ],
     [
         'title' => '24/7 Expert Support',
-        'desc' => 'ffmpeg and video encoding support experts available round the clock.',
+        'desc' => 'Dedicated team available anytime for server management and troubleshooting.',
         'icon' => 'fas fa-headset'
     ]
 ];
@@ -125,39 +43,39 @@ $VIDEO_FEATURES = [
 $VIDEO_FAQ = [
     [
         'question' => "What is Netherlands Video Hosting?",
-        'answer' => "It is a specialized hosting service located in the Netherlands, optimized for storing and streaming large video files (VOD) while providing legal protection against DMCA takedowns."
+        'answer' => "Offshore adult video hosting with high-speed streaming, secure servers, and DMCA ignored protection."
     ],
     [
         'question' => "Are these servers DMCA ignored?",
-        'answer' => "Yes. We do not honor DMCA takedown requests from third parties. Your content remains online and under your control."
+        'answer' => "Yes, all servers are fully DMCA ignored, ensuring safe hosting of adult content."
     ],
     [
         'question' => "Can I host large video libraries?",
-        'answer' => "Absolutely. Our servers are designed with high-density storage (up to 36 drive bays) to hold petabytes of video content."
+        'answer' => "Absolutely! High storage and scalable bandwidth allow HD & 4K video hosting."
     ],
     [
         'question' => "Is streaming fast from Netherlands servers?",
-        'answer' => "Yes. Amsterdam is a major internet hub. We have direct peers with major ISPs, ensuring low latency to Europe, US, and Asia."
+        'answer' => "Yes, optimized servers provide smooth playback worldwide with minimal latency."
     ],
     [
         'question' => "How secure are these servers?",
-        'answer' => "We implement strict physical security, network firewalls, and offer optional full disk encryption to ensure your data is accessible only by you."
+        'answer' => "SSL, firewall, and server-level encryption keep your content fully protected."
     ],
     [
         'question' => "Do you provide 24/7 support?",
-        'answer' => "Yes, our team is available 24/7/365 to assist with hardware issues, network optimization, or basic OS troubleshooting."
+        'answer' => "Yes, expert support is available anytime for server management and troubleshooting."
     ],
     [
         'question' => "Do servers support multiple video formats?",
-        'answer' => "Yes, you have full root access. You can install FFmpeg, HandBrake, or any other encoding software to support MP4, AVI, MKV, HLS, etc."
+        'answer' => "Yes, all popular formats like MP4, MKV, AVI, and HLS streaming are supported."
     ],
     [
         'question' => "Is Netherlands hosting suitable for global audiences?",
-        'answer' => "Definitely. Our 10Tbps+ network capacity ensures that viewers from around the globe experience smooth playback."
+        'answer' => "Absolutely, low latency and global connectivity ensure fast streaming anywhere."
     ],
     [
         'question' => "Can I manage my server easily?",
-        'answer' => "All servers come with IPMI/KVM access, allowing you to manage BIOS, reinstall OS, and troubleshoot remotely."
+        'answer' => "Toggle Content"
     ],
 ];
 

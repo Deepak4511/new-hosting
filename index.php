@@ -111,7 +111,7 @@ $page = 'home';
 
                         <!-- Subtitle/Billing Cycle Badge -->
                         <?php if (!$isContact): ?>
-                            <p class="text-wine/70 text-xs font-bold uppercase tracking-wide mb-6">Billed Annually</p>
+
                         <?php else: ?>
                             <?php if (isset($plan['subtitle'])): ?>
                                 <p class="text-wine/70 text-xs font-bold uppercase tracking-wide mb-6"><?php echo $plan['subtitle']; ?></p>
@@ -152,117 +152,153 @@ $page = 'home';
     <!-- Eco Server Banner -->
 
     <!-- Reality Check Section -->
-    <section class="py-24 px-6 relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 pointer-events-none -z-10 bg-slate-50/50">
-            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-wine/5 rounded-full blur-3xl opacity-60"></div>
-            <div class="absolute left-[-100px] bottom-0 w-[400px] h-[400px] bg-red-purple/5 rounded-full blur-3xl opacity-60"></div>
+    <!-- Reality Check Section -->
+    <section class="py-24 px-6 relative overflow-hidden bg-slate-50">
+        <!-- Background Decor -->
+        <div class="absolute inset-0 pointer-events-none -z-10">
+            <div class="absolute left-0 top-0 w-2/3 h-full bg-gradient-to-r from-white to-transparent"></div>
         </div>
 
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <!-- Left Side: Content -->
-            <div>
-                <span class="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest text-wine uppercase bg-wine/5 border border-wine/10 rounded-full">
-                    WHY HOTSITE MAKERS
-                </span>
+        <div class="max-w-7xl mx-auto space-y-12">
+            <!-- Main Feature Card -->
+            <div class="bg-white rounded-[2.5rem] p-8 lg:p-12 shadow-2xl shadow-slate-200/50 border border-slate-100 grid lg:grid-cols-2 gap-16 items-center relative overflow-hidden">
 
-                <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-8 leading-tight">
-                    Not Another Hosting Company.<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">We Build Servers for Reality.</span>
-                </h2>
-
-                <p class="text-slate-600 text-lg mb-10 leading-relaxed max-w-lg">
-                    Most hosting companies are built for blogs and landing pages.
-                    We build infrastructure for projects that generate <strong class="text-deep-purple bg-deep-purple/5 px-1 rounded">real traffic,
-                        real files, real risk and real money</strong>.
-                </p>
-
-                <div class="flex flex-col gap-4 mb-12">
-                    <!-- Negative Items -->
-                    <div class="flex items-center gap-4 group">
-                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t oversell resources</span>
+                <!-- Left: Content -->
+                <div class="relative z-10">
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                        </span>
+                        <span class="text-xs font-bold tracking-widest text-slate-400 uppercase">REALITY CHECK • V1.0</span>
                     </div>
 
-                    <div class="flex items-center gap-4 group">
-                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-times"></i>
+                    <h2 class="text-4xl md:text-5xl font-black text-deep-purple mb-6 leading-[1.15]">
+                        Not Another <br>
+                        Hosting Company. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-wine to-red-purple">We Build for Reality.</span>
+                    </h2>
+
+                    <p class="text-slate-500 text-lg mb-8 leading-relaxed font-medium max-w-lg">
+                        Most hosting companies are built for blogs. We build infrastructure for projects that generate <strong class="text-deep-purple bg-deep-purple/5 px-1 rounded">real traffic, real risk, and real money</strong>.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mb-10">
+                        <div class="px-4 py-2 rounded-lg bg-wine/5 text-wine text-xs font-bold uppercase tracking-wide border border-wine/10">
+                            <i class="fas fa-check mr-2"></i> Adult Friendly
                         </div>
-                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t panic on DMCA emails</span>
+                        <div class="px-4 py-2 rounded-lg bg-wine/5 text-wine text-xs font-bold uppercase tracking-wide border border-wine/10">
+                            <i class="fas fa-check mr-2"></i> Crypto Ready
+                        </div>
+                        <div class="px-4 py-2 rounded-lg bg-wine/5 text-wine text-xs font-bold uppercase tracking-wide border border-wine/10">
+                            <i class="fas fa-check mr-2"></i> Streaming
+                        </div>
                     </div>
 
-                    <div class="flex items-center gap-4 group">
-                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center text-sm border border-red-100 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <span class="text-slate-500 font-medium group-hover:text-slate-700 transition-colors">We don’t throttle viral traffic</span>
-                    </div>
+                    <a href="#plans" class="inline-flex items-center justify-center gap-3 bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
+                        See Server Options <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
 
-                    <!-- Positive Item -->
-                    <div class="flex items-center gap-4 mt-2 group">
-                        <div class="w-8 h-8 rounded-lg bg-green-50 text-green-600 flex items-center justify-center text-sm border border-green-100 shadow-sm shadow-green-100/50 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-check"></i>
+                <!-- Right: Terminal/Rack Visual -->
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-wine/20 to-deep-purple/20 rounded-[2rem] blur-xl opacity-50"></div>
+                    <div class="bg-[#0b0c15] text-slate-300 rounded-2xl p-8 shadow-2xl font-mono text-sm relative border border-white/5 mx-auto max-w-md w-full z-10">
+                        <!-- Header -->
+                        <div class="flex justify-between items-start mb-8 border-b border-white/10 pb-4">
+                            <div class="flex gap-1.5 pt-1">
+                                <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-[10px] text-slate-500 font-bold tracking-[0.2em] uppercase mb-1">SHIELD_NODE // PRIMARY</div>
+                            </div>
                         </div>
-                        <span class="text-deep-purple font-bold text-lg">We build for <span class="decoration-wine/30 underline decoration-2 underline-offset-2">adult, video, streaming & high-risk niches</span></span>
+
+                        <!-- Specs -->
+                        <div class="space-y-4 text-[11px] tracking-wide">
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• OVERSUB_RATIO</span>
+                                <span class="text-white font-bold">1:1 (Dedicated)</span>
+                            </div>
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• DMCA_ACTION</span>
+                                <span class="text-white font-bold">/dev/null</span>
+                            </div>
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• TRAFFIC_CAP</span>
+                                <span class="text-white font-bold">UNLIMITED</span>
+                            </div>
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• CONTENT_TYPE</span>
+                                <span class="text-white font-bold">ANY / ALL</span>
+                            </div>
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• THROTTLING</span>
+                                <span class="text-white font-bold">DISABLED</span>
+                            </div>
+                            <div class="flex justify-between items-center group cursor-default">
+                                <span class="text-slate-500 font-bold group-hover:text-wine transition-colors">• PRIVACY</span>
+                                <span class="text-white font-bold">MAXIMUM</span>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-end">
+                            <div>
+                                <div class="text-[9px] text-slate-500 font-bold uppercase mb-1">Provisioned Status</div>
+                                <div class="text-xs text-green-500 font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">ACTIVE PROTECTION</div>
+                            </div>
+                            <div class="flex gap-1 mb-1">
+                                <div class="w-1 h-1 bg-red-500 rounded-full animate-pulse"></div>
+                                <div class="w-1 h-1 bg-red-500 rounded-full animate-pulse delay-75"></div>
+                                <div class="w-1 h-1 bg-red-500 rounded-full animate-pulse delay-150"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Cards -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- No Overselling -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="flex justify-between mb-6">
+                        <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center"><i class="fas fa-server"></i></div>
+                        <span class="text-[10px] font-bold text-slate-300 uppercase">Resources</span>
+                    </div>
+                    <h4 class="font-bold text-deep-purple mb-2">No Resource Overselling</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">We never share your RAM or CPU. What you buy is exactly what allows your project to scale.</p>
+                    <div class="flex items-center gap-2 text-[10px] text-blue-600 font-bold">
+                        <i class="fas fa-check-circle"></i> Dedicated Hardware
                     </div>
                 </div>
 
-                <a href="#plans" class="inline-flex items-center gap-3 bg-deep-purple hover:bg-wine text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-deep-purple/20 hover:-translate-y-1 group">
-                    See Available Server Options
-                    <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
+                <!-- DMCA Immunity -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1 relative overflow-hidden group">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-wine/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <div class="flex justify-between mb-6 relative z-10">
+                        <div class="w-10 h-10 rounded-full bg-wine/10 text-wine flex items-center justify-center"><i class="fas fa-shield-alt"></i></div>
+                        <span class="text-[10px] font-bold text-wine bg-wine/10 px-2 py-1 rounded-full border border-wine/20">IGNORED</span>
+                    </div>
+                    <h4 class="font-bold text-deep-purple mb-2">Zero Panic on DMCA</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">We don’t panic on abuse reports. Your content stays online, always protected by our offshore policies.</p>
+                    <div class="flex items-center gap-2 text-[10px] text-wine font-bold">
+                        <i class="fas fa-check-circle"></i> 100% Immunity
+                    </div>
+                </div>
 
-            <!-- Right Side: Visual -->
-            <div class="relative pl-4 lg:pl-0">
-                <!-- Decorative Backdrop -->
-                <div class="absolute -inset-0.5 bg-gradient-to-br from-wine to-red-purple rounded-[2.5rem] blur opacity-20 animate-pulse"></div>
-
-                <!-- Card Container -->
-                <div class="relative bg-[#1a0f1d] rounded-[2rem] p-10 overflow-hidden border border-white/5 shadow-2xl group">
-                    <!-- Tech Overlay Grid -->
-                    <div class="absolute inset-0 opacity-[0.05]" style="background-image: linear-gradient(#bf40bf 1px, transparent 1px), linear-gradient(90deg, #bf40bf 1px, transparent 1px); background-size: 40px 40px;"></div>
-
-                    <!-- Content -->
-                    <div class="relative z-10 text-center">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-wine to-red-purple text-white text-2xl mb-8 shadow-lg shadow-wine/30 group-hover:scale-110 transition-transform duration-500">
-                            <i class="fas fa-shield-virus"></i>
-                        </div>
-
-                        <h3 class="text-3xl font-black text-white mb-10 tracking-tight">Built to Take a Hit</h3>
-
-                        <!-- Animated Bars Visualization -->
-                        <div class="flex items-end justify-center gap-2 h-40 mb-10 px-4">
-                            <!-- Bar 1 -->
-                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
-                                <div class="absolute bottom-0 w-full bg-red-purple animate-[bounce_2s_infinite]" style="height: 40%"></div>
-                            </div>
-                            <!-- Bar 2 -->
-                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
-                                <div class="absolute bottom-0 w-full bg-white animate-[bounce_2.5s_infinite]" style="height: 75%"></div>
-                            </div>
-                            <!-- Bar 3 -->
-                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
-                                <div class="absolute bottom-0 w-full bg-red-purple animate-[bounce_2.2s_infinite]" style="height: 60%"></div>
-                            </div>
-                            <!-- Bar 4 (Tallest) -->
-                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full shadow-[0_0_20px_rgba(191,64,191,0.5)]">
-                                <div class="absolute bottom-0 w-full bg-gradient-to-t from-wine to-red-purple animate-[bounce_3s_infinite]" style="height: 90%"></div>
-                            </div>
-                            <!-- Bar 5 -->
-                            <div class="w-12 bg-wine/30 rounded-t-lg relative overflow-hidden group-hover:bg-wine/50 transition-colors duration-500 h-full">
-                                <div class="absolute bottom-0 w-full bg-white animate-[bounce_2.7s_infinite]" style="height: 50%"></div>
-                            </div>
-                        </div>
-
-                        <div class="inline-block bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10 mx-auto">
-                            <p class="text-slate-300 font-medium text-sm leading-relaxed">
-                                <span class="text-red-purple font-bold">Traffic spikes. DMCA pressure. Heavy files.</span><br>
-                                This is where weak hosting fails — and where our servers shine.
-                            </p>
-                        </div>
+                <!-- Viral Traffic -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-lg shadow-wine/5 hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="flex justify-between mb-6">
+                        <div class="w-10 h-10 rounded-full bg-green-50 text-green-500 flex items-center justify-center"><i class="fas fa-bolt"></i></div>
+                        <span class="text-[10px] font-bold text-slate-300 uppercase">Performance</span>
+                    </div>
+                    <h4 class="font-bold text-deep-purple mb-2">Viral Traffic Ready</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">No throttling when you go viral. Push unlimited bandwidth 24/7 without speed caps or hidden fees.</p>
+                    <div class="flex items-center gap-2 text-[10px] text-green-600 font-bold">
+                        <i class="fas fa-check-circle"></i> Unmetered Uplink
                     </div>
                 </div>
             </div>
@@ -450,50 +486,78 @@ $page = 'home';
     <?php include './inc/trusted-stats.php'; ?>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-24 px-6 max-w-3xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-black mb-12 text-center text-deep-purple">Frequently asked questions</h2>
-        <div class="space-y-4">
-            <?php foreach ($FAQ_ITEMS as $i => $item): ?>
-                <div class="bg-white rounded-xl border border-slate-100 overflow-hidden transition-all duration-300 hover:border-wine/30 group">
-                    <button
-                        onclick="toggleFaq(<?php echo $i; ?>)"
-                        class="w-full px-6 py-5 text-left flex justify-between items-center cursor-pointer focus:outline-none">
-                        <span class="text-lg font-bold text-slate-700 transition-colors group-hover:text-wine"><?php echo $item['question']; ?></span>
+    <section class="py-24 px-6 relative overflow-hidden bg-slate-50">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-wine/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-deep-purple/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-                        <div class="relative w-6 h-6 flex items-center justify-center">
-                            <div class="absolute w-4 h-0.5 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-minus-<?php echo $i; ?>"></div>
-                            <div class="absolute w-0.5 h-4 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-plus-<?php echo $i; ?>"></div>
-                        </div>
-                    </button>
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-24 items-start relative z-10">
+            <!-- Left Side -->
+            <div class="lg:col-span-5 text-left sticky top-24">
+                <span class="inline-block text-wine font-bold tracking-[0.2em] uppercase text-sm mb-6">FAQ</span>
+                <h2 class="text-5xl md:text-7xl font-black text-deep-purple mb-8 tracking-tight">All the <br> details.</h2>
+                <p class="text-slate-600 text-xl font-medium max-w-sm leading-relaxed">
+                    Got a question? We're here to help. If you don't see your question here, drop us a line.
+                </p>
 
-                    <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-slate-50">
-                        <div class="px-6 pb-6 pt-2 text-base text-slate-600 leading-7 font-medium">
-                            <?php echo $item['answer']; ?>
+                <a href="contact.php" class="hidden lg:inline-flex items-center gap-2 mt-12 text-deep-purple font-bold border-b border-deep-purple/30 pb-1 hover:text-wine hover:border-wine transition-all">
+                    Contact Support <i class="fas fa-arrow-right text-xs transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="lg:col-span-7 space-y-4">
+                <?php foreach ($FAQ_ITEMS as $i => $item): ?>
+                    <div class="group relative bg-white border border-slate-200 rounded-[2rem] overflow-hidden hover:border-wine/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full p-6 md:p-8 text-left flex justify-between items-center focus:outline-none">
+                            <span class="text-lg md:text-xl font-bold text-deep-purple pr-8"><?php echo $item['question']; ?></span>
+
+                            <div class="relative w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-wine/10 transition-colors">
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-opacity duration-300" id="icon-minus-<?php echo $i; ?>" style="opacity: 0;"></div>
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300 rotate-90" id="icon-plus-v-<?php echo $i; ?>"></div>
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300" id="icon-plus-h-<?php echo $i; ?>"></div>
+                            </div>
+                        </button>
+
+                        <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity,margin] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden max-h-0 opacity-0 bg-slate-50/50">
+                            <div class="px-6 md:px-8 pb-8 pt-0 text-lg text-slate-500 leading-relaxed font-medium">
+                                <?php echo $item['answer']; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
         </div>
 
         <script>
             function toggleFaq(index) {
                 const answer = document.getElementById(`faq-answer-${index}`);
                 const minus = document.getElementById(`icon-minus-${index}`);
-                const plus = document.getElementById(`icon-plus-${index}`);
+                const plusV = document.getElementById(`icon-plus-v-${index}`);
+                const plusH = document.getElementById(`icon-plus-h-${index}`);
+                // Button is parent of icon container
+                // const btn = answer.previousElementSibling; 
 
                 const isOpen = !answer.classList.contains('max-h-0');
 
                 if (isOpen) {
+                    // Close
                     answer.classList.add('max-h-0', 'opacity-0');
-                    answer.classList.remove('max-h-96', 'opacity-100');
-                    plus.classList.remove('rotate-90', 'opacity-0');
-                    minus.classList.remove('rotate-180');
+                    answer.classList.remove('max-h-[500px]', 'opacity-100');
 
+                    // Icon to Plus
+                    minus.style.opacity = '0';
+                    plusV.style.transform = 'rotate(90deg)';
+                    plusV.style.opacity = '1';
                 } else {
+                    // Open
                     answer.classList.remove('max-h-0', 'opacity-0');
-                    answer.classList.add('max-h-96', 'opacity-100');
-                    plus.classList.add('rotate-90', 'opacity-0');
-                    minus.classList.add('rotate-180');
+                    answer.classList.add('max-h-[500px]', 'opacity-100');
+
+                    // Icon to Minus
+                    minus.style.opacity = '1';
+                    plusV.style.transform = 'rotate(0deg)';
+                    plusV.style.opacity = '0';
                 }
             }
         </script>

@@ -357,14 +357,14 @@ include './inc/navbar.php';
                         <?php
                         $contact_methods = [
                             // ['title' => "Live Chat", 'icon' => "fa-comments", 'color' => "bg-dmca-dark"],
-                            ['title' => "Email Support", 'icon' => "fa-envelope", 'color' => "bg-dmca-bright"],
-                            ['title' => "Telegram", 'icon' => "fa-paper-plane", 'color' => "bg-[#24A1DE]"]
+                            ['title' => "Email Support", 'icon' => "fa-envelope", 'color' => "bg-dmca-bright", 'link' => "mailto:support@dmcaqloud.com"],
+                            ['title' => "Telegram", 'icon' => "fa-paper-plane", 'color' => "bg-[#24A1DE]", 'link' => "https://t.me/Dmcaqloud"]
                         ];
                         foreach ($contact_methods as $method): ?>
-                            <button class="<?php echo $method['color']; ?> p-6 rounded-2xl shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center gap-3">
+                            <a href="<?php echo $method['link']; ?>" target="_blank" class="<?php echo $method['color']; ?> p-6 rounded-2xl shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center gap-3">
                                 <i class="fa-solid <?php echo $method['icon']; ?> text-2xl"></i>
                                 <span class="font-bold"><?php echo $method['title']; ?></span>
-                            </button>
+                            </a>
                         <?php endforeach; ?>
                     </div>
 

@@ -166,9 +166,9 @@ include_once __DIR__ . '/constants.php';
 
             <!-- Desktop CTA -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="#" class="text-slate-600 font-bold hover:text-wine transition-colors text-sm">Login</a>
-                <a href="#" class="bg-wine hover:bg-red-purple text-white px-6 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-wine/20 text-sm transform hover:scale-105">
-                    Client Area
+                <a href="https://pos.dmcaqloud.com/clientarea.php" class="text-slate-600 font-bold hover:text-wine transition-colors text-sm">Login</a>
+                <a href="https://pos.dmcaqloud.com/register.php" class="bg-wine hover:bg-red-purple text-white px-6 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-wine/20 text-sm transform hover:scale-105">
+                    Sign Up
                 </a>
             </div>
 

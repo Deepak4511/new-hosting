@@ -59,7 +59,7 @@ include './inc/navbar.php';
                     <p class="text-slate-500 text-sm leading-relaxed mb-8 min-h-[3rem]">
                         Get lightning fast responses for urgent queries, technical support, and quick sales estimates. Available 24/7.
                     </p>
-                    <a href="#" class="inline-flex items-center text-wine font-bold text-sm group-hover:text-red-purple transition-colors">
+                    <a href="http://t.me/Dmcaqloud" class="inline-flex items-center text-wine font-bold text-sm group-hover:text-red-purple transition-colors">
                         Get in Touch <i class="fas fa-external-link-alt ml-2 text-xs opacity-70"></i>
                     </a>
                 </div>
@@ -93,7 +93,7 @@ include './inc/navbar.php';
                     <p class="text-slate-500 text-sm leading-relaxed mb-8 min-h-[3rem]">
                         Report issues, request server configurations, or seek technical advice regarding your active Dmcaqloud instances.
                     </p>
-                    <a href="#" class="inline-flex items-center text-wine font-bold text-sm group-hover:text-red-purple transition-colors">
+                    <a href="mailto:support@dmcaqloud.com" class="inline-flex items-center text-wine font-bold text-sm group-hover:text-red-purple transition-colors">
                         Get in Touch <i class="fas fa-external-link-alt ml-2 text-xs opacity-70"></i>
                     </a>
                 </div>
@@ -187,58 +187,77 @@ include './inc/navbar.php';
         </div>
     </section>
 
-    <!-- FAQ Section (Light Theme) -->
-    <section id="faq" class="py-24 px-6 bg-white">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black mb-12 text-center text-deep-purple">Frequently Asked <span class="text-wine">Questions</span></h2>
-            <p class="text-slate-500 text-center mb-16 -mt-8 font-medium">Common questions about our services and contact procedures.</p>
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-6 relative overflow-hidden bg-slate-50">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-wine/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-deep-purple/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-            <div class="space-y-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-24 items-start relative z-10">
+            <!-- Left Side -->
+            <div class="lg:col-span-5 text-left sticky top-24">
+                <span class="inline-block text-wine font-bold tracking-[0.2em] uppercase text-sm mb-6">FAQ</span>
+                <h2 class="text-5xl md:text-7xl font-black text-deep-purple mb-8 tracking-tight">All the <br> details.</h2>
+                <p class="text-slate-600 text-xl font-medium max-w-sm leading-relaxed">
+                    Got a question? We're here to help. If you don't see your question here, drop us a line.
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="lg:col-span-7 space-y-4">
                 <?php foreach ($FAQ_ITEMS as $i => $item): ?>
-                    <div class="bg-white rounded-xl border border-slate-100 overflow-hidden transition-all duration-300 hover:border-wine/30 group">
-                        <button
-                            onclick="toggleFaq(<?php echo $i; ?>)"
-                            class="w-full px-6 py-5 text-left flex justify-between items-center cursor-pointer focus:outline-none">
-                            <span class="text-lg font-bold text-slate-700 transition-colors group-hover:text-wine"><?php echo $item['question']; ?></span>
+                    <div class="group relative bg-white border border-slate-200 rounded-[2rem] overflow-hidden hover:border-wine/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <button onclick="toggleFaq(<?php echo $i; ?>)" class="w-full p-6 md:p-8 text-left flex justify-between items-center focus:outline-none">
+                            <span class="text-lg md:text-xl font-bold text-deep-purple pr-8"><?php echo $item['question']; ?></span>
 
-                            <div class="relative w-6 h-6 flex items-center justify-center flex-shrink-0 ml-4">
-                                <div class="absolute w-4 h-0.5 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-minus-<?php echo $i; ?>"></div>
-                                <div class="absolute w-0.5 h-4 bg-red-purple transition-transform duration-300 ease-out origin-center" id="icon-plus-<?php echo $i; ?>"></div>
+                            <div class="relative w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-wine/10 transition-colors">
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-opacity duration-300" id="icon-minus-<?php echo $i; ?>" style="opacity: 0;"></div>
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300 rotate-90" id="icon-plus-v-<?php echo $i; ?>"></div>
+                                <div class="absolute w-3 h-0.5 bg-deep-purple transition-transform duration-300" id="icon-plus-h-<?php echo $i; ?>"></div>
                             </div>
                         </button>
 
-                        <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity] duration-500 ease-in-out overflow-hidden max-h-0 opacity-0 bg-slate-50">
-                            <div class="px-6 pb-6 pt-2 text-base text-slate-600 leading-7 font-medium">
+                        <div id="faq-answer-<?php echo $i; ?>" class="transition-[max-height,opacity,margin] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden max-h-0 opacity-0 bg-slate-50/50">
+                            <div class="px-6 md:px-8 pb-8 pt-0 text-lg text-slate-500 leading-relaxed font-medium">
                                 <?php echo $item['answer']; ?>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
-
-            <script>
-                function toggleFaq(index) {
-                    const answer = document.getElementById(`faq-answer-${index}`);
-                    const minus = document.getElementById(`icon-minus-${index}`);
-                    const plus = document.getElementById(`icon-plus-${index}`);
-
-                    const isOpen = !answer.classList.contains('max-h-0');
-
-                    if (isOpen) {
-                        answer.classList.add('max-h-0', 'opacity-0');
-                        answer.classList.remove('max-h-96', 'opacity-100');
-                        plus.classList.remove('rotate-90', 'opacity-0');
-                        minus.classList.remove('rotate-180');
-
-                    } else {
-                        answer.classList.remove('max-h-0', 'opacity-0');
-                        answer.classList.add('max-h-96', 'opacity-100');
-                        plus.classList.add('rotate-90', 'opacity-0');
-                        minus.classList.add('rotate-180');
-                    }
-                }
-            </script>
         </div>
+
+        <script>
+            function toggleFaq(index) {
+                const answer = document.getElementById(`faq-answer-${index}`);
+                const minus = document.getElementById(`icon-minus-${index}`);
+                const plusV = document.getElementById(`icon-plus-v-${index}`);
+                const plusH = document.getElementById(`icon-plus-h-${index}`);
+
+                const isOpen = !answer.classList.contains('max-h-0');
+
+                if (isOpen) {
+                    // Close
+                    answer.classList.add('max-h-0', 'opacity-0');
+                    answer.classList.remove('max-h-[500px]', 'opacity-100');
+
+                    // Icon to Plus
+                    minus.style.opacity = '0';
+                    plusV.style.transform = 'rotate(90deg)';
+                    plusV.style.opacity = '1';
+                } else {
+                    // Open
+                    answer.classList.remove('max-h-0', 'opacity-0');
+                    answer.classList.add('max-h-[500px]', 'opacity-100');
+
+                    // Icon to Minus
+                    minus.style.opacity = '1';
+                    plusV.style.transform = 'rotate(0deg)';
+                    plusV.style.opacity = '0';
+                }
+            }
+        </script>
     </section>
 
 </main>
