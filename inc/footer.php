@@ -18,17 +18,20 @@
                     At DMCAQloud, we deliver Offshore DMCA-Ignored Hosting with blazing-fast NVMe SSD performance, enterprise-grade security, and rock-solid 99.99% uptime trusted by creators, businesses, agencies worldwide.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
+                    <a href="https://www.facebook.com/profile.php?id=61587004352864" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
+                    <a href="https://x.com/dmcaqloud" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
+                    <a href="https://www.instagram.com/dmcaqloud/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
+                    <a href="https://www.linkedin.com/in/dmcaqloud/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
                         <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/dmcaqloud/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-white hover:text-wine hover:scale-110 transition-all border border-white/10">
+                        <i class="fa-brands fa-pinterest"></i>
                     </a>
                 </div>
             </div>

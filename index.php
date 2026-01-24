@@ -76,9 +76,9 @@ $page = 'home';
 
         <div class="relative flex flex-col xl:flex-row justify-center items-start gap-6 z-10">
             <!-- Illustration Left -->
-            <div class="hidden 2xl:block absolute left-0 bottom-0 w-64 pointer-events-none -translate-x-4 translate-y-12">
+            <!-- <div class="hidden 2xl:block absolute left-0 bottom-0 w-64 pointer-events-none -translate-x-4 translate-y-12">
                 <img src="/assets/img/pricing_woman_laptop.png" alt="Woman with laptop" class="w-full h-auto object-contain drop-shadow-xl" />
-            </div>
+            </div> -->
 
             <!-- Pricing Cards -->
             <div class="flex flex-wrap justify-center gap-6 w-full px-4">
@@ -143,9 +143,9 @@ $page = 'home';
             </div>
 
             <!-- Illustration Right -->
-            <div class="hidden 2xl:block absolute right-0 bottom-0 top-20 w-56 pointer-events-none translate-x-4 translate-y-12 flex items-end">
+            <!-- <div class="hidden 2xl:block absolute right-0 bottom-0 top-20 w-56 pointer-events-none translate-x-4 translate-y-12 flex items-end">
                 <img src="/assets/img/pricing_woman_standing.png" alt="Woman standing" class="w-full h-auto object-contain drop-shadow-xl" />
-            </div>
+            </div> -->
         </div>
     </section>
 

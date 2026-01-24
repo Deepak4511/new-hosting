@@ -20,7 +20,7 @@ include './data/dedicated-server-plans.php';
                 Get full root access, unmetered bandwidth, and DMCA-ignored hosting in secure offshore locations.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button onclick="document.getElementById('server-list').scrollIntoView({behavior: 'smooth'})" class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/30 hover:-translate-y-1">
+                <button onclick="document.getElementById('explore').scrollIntoView({behavior: 'smooth'})" class="bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-wine/30 hover:-translate-y-1">
                     Choose Your Server
                 </button>
                 <button class="bg-white border border-slate-200 hover:bg-slate-50 px-8 py-4 rounded-xl font-bold text-lg transition-all text-slate-700 shadow-sm hover:-translate-y-1">
@@ -32,7 +32,7 @@ include './data/dedicated-server-plans.php';
         <!-- Right Image -->
         <div class="relative hidden lg:block">
             <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-            <img src="/assets/img/hero_illustration.png" alt="Dedicated Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+            <img src="assets/img/dedicated-hero.jpeg" alt="Dedicated Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
         </div>
     </div>
 </section>
@@ -40,7 +40,7 @@ include './data/dedicated-server-plans.php';
 
 
 <!-- Server List -->
-<section id="server-list" class=" px-6 max-w-[1600px] mx-auto pb-24">
+<section id="explore" class=" px-6 max-w-[1600px] mx-auto pb-24">
     <!-- Header & Filters -->
     <div class=" items-center mb-12 gap-8">
         <div class="text-center  w-full xl:w-auto">
@@ -157,7 +157,7 @@ include './data/dedicated-server-plans.php';
                     </div>
                 </div>
 
-                <a href="#plans" class="inline-flex items-center justify-center gap-3 bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
+                <a href="#explore" class="inline-flex items-center justify-center gap-3 bg-wine hover:bg-red-purple text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
                     Configure Server <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
@@ -470,9 +470,9 @@ include './data/dedicated-server-plans.php';
             </div>
             <h3 class="text-3xl font-black mb-4">New Website?</h3>
             <p class="text-white mb-8 font-medium">Launch your project with complete freedom and privacy! Get your DMCA Ignored Offshore Dedicated Server up and running within minutes built for high performance, anonymity, and total control. Whether it’s streaming, adult content, or high-traffic apps, DmcaQloud gives you the perfect start.</p>
-            <button class="bg-white text-wine px-8 py-3 rounded-xl font-bold hover:bg-thistle transition-colors w-fit">
+            <a href="#explore" class="bg-white text-wine px-8 py-3 rounded-xl font-bold hover:bg-thistle transition-colors w-fit">
                 Get Started
-            </button>
+            </a>
         </div>
     </div>
 
@@ -485,9 +485,9 @@ include './data/dedicated-server-plans.php';
             <p class="text-slate-500 mb-8 font-medium">Moving from another host? We’ve got you covered!
                 Our experts handle your full website migration data, files, and configurations with zero downtime and 100% data safety.
                 Switch to DmcaQloud and experience faster speed, stronger privacy, and total stability from day one.</p>
-            <button class="bg-wine text-white px-8 py-3 rounded-xl font-bold hover:bg-red-purple transition-colors w-fit">
+            <a href="https://pos.dmcaqloud.com/submitticket.php" class="bg-wine text-white px-8 py-3 rounded-xl font-bold hover:bg-red-purple transition-colors w-fit">
                 Migrate Now
-            </button>
+            </a>
         </div>
     </div>
 </section>

@@ -28,7 +28,7 @@ include './data/streaming-data.php';
         <!-- Right Image -->
         <div class="relative hidden lg:block">
             <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-            <img src="/assets/img/hero_illustration.png" alt="Streaming Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+            <img src="assets/img/streaming-hero.jpeg" alt="Streaming Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
         </div>
     </div>
 </section>

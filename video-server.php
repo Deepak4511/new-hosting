@@ -28,7 +28,7 @@ include './data/video-data.php';
         <!-- Right Image -->
         <div class="relative hidden lg:block">
             <div class="absolute -inset-4 bg-gradient-to-r from-red-purple/20 to-wine/20 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-            <img src="/assets/img/hero_illustration.png" alt="Video Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
+            <img src="assets/img/video-server-hero.jpeg" alt="Video Servers" class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" />
         </div>
     </div>
 </section>
@@ -101,7 +101,7 @@ include './data/video-data.php';
                     </div>
                 </div>
 
-                <a href="https://t.me/Dmcaqloud" class="inline-flex items-center justify-center gap-3 bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
+                <a href="#server-list" class="inline-flex items-center justify-center gap-3 bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-sm transition-all shadow-xl hover:-translate-y-1 group w-full sm:w-auto">
                     Deploy Video Node <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
@@ -474,7 +474,7 @@ include './data/video-data.php';
                 Got a question? We're here to help. If you don't see your question here, drop us a line.
             </p>
 
-            <a href="#contact" class="hidden lg:inline-flex items-center gap-2 mt-12 text-deep-purple font-bold border-b border-deep-purple/30 pb-1 hover:text-wine hover:border-wine transition-all">
+            <a href="contact.php" class="hidden lg:inline-flex items-center gap-2 mt-12 text-deep-purple font-bold border-b border-deep-purple/30 pb-1 hover:text-wine hover:border-wine transition-all">
                 Contact Support <i class="fas fa-arrow-right text-xs transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
             </a>
         </div>
